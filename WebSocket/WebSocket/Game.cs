@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace WebSocket
@@ -17,11 +14,25 @@ namespace WebSocket
         {
             var rng = new Random(5);
             for (int i = 0; i < 10; i++)
+            {
                 Asteroids.Add(new Asteroid
                 {
                     R = rng.Next(1, 3),
                     Position = new Point(rng.Next(10, 100), rng.Next(10, 100))
                 });
+            }
+        }
+
+        public void Step()
+        {
+            // TODO
+        }
+
+        public Spaceship AddNewSpaceship()
+        {
+            var spaceship = new Spaceship();
+            Spaceships.Add(spaceship);
+            return spaceship;
         }
     }
 }
