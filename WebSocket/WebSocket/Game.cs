@@ -9,6 +9,7 @@ namespace WebSocket
         public List<Spaceship> Spaceships = new List<Spaceship>();
         public List<Missile> Missiles = new List<Missile>();
         public List<Asteroid> Asteroids = new List<Asteroid>();
+        int nextSpaceshipId = 1;
 
         public Game()
         {
@@ -23,16 +24,37 @@ namespace WebSocket
             }
         }
 
-        public void Step()
-        {
-            // TODO
-        }
-
         public Spaceship AddNewSpaceship()
         {
-            var spaceship = new Spaceship();
+            var spaceship = new Spaceship { Id = nextSpaceshipId++ };
             Spaceships.Add(spaceship);
             return spaceship;
+        }
+
+        public void Step()
+        {
+            foreach (var spaceship in Spaceships)
+            {
+                Move(ref spaceship.Position, ref spaceship.Speed, spaceship.Acceleration);
+            }
+            foreach (var missile in Missiles)
+            {
+                Move(ref missile.Position, ref missile.Speed, new Vector());
+            }
+        }
+
+        private void Move(ref Point p, ref Vector s, Vector a)
+        {
+            // Gravity calculation
+            foreach (var asteroid in Asteroids)
+            {
+                var v = asteroid.Position - p;
+                var g = asteroid.R / v.LengthSquared;
+                a += v / v.Length * g;
+            }
+            // Update speed and position
+            s += a;
+            p += s;
         }
     }
 }
