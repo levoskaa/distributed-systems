@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace WebSocket
 {
@@ -41,9 +43,11 @@ namespace WebSocket
             {
                 var packet = await ws.WebSocket.ReceiveAsync(
                 new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
-                if (packet.MessageType == WebSocketMessageType.Close)
+                if (packet.MessageType == WebSocketMessageType.Close) {
                     return;
-                await ws.WebSocket.SendAsync(new ArraySegment<byte>(buffer, 0, packet.Count),
+                }
+                Array.Reverse(buffer);
+                await ws.WebSocket.SendAsync(new ArraySegment<byte>(buffer, buffer.Length - packet.Count, packet.Count),
                 WebSocketMessageType.Text, true, CancellationToken.None);
             }
         }
