@@ -1,7 +1,7 @@
 "use strict";
 class Game {
     constructor() {
-        this.webSocket = new WebSocket("ws://ws.ifelse.io/");
+        this.webSocket = new WebSocket("ws://localhost:8377/Design_Time_Addresses/G/");
         this.webSocket.onmessage = e => {
             const p = document.createElement("p");
             p.innerText = e.data;
@@ -11,5 +11,5 @@ class Game {
     }
 }
 window.onload = () => {
-    const game = new Game();
+    new Game();
 };

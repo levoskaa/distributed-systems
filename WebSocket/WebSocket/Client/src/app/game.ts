@@ -1,5 +1,5 @@
 ﻿class Game {
-    private webSocket = new WebSocket("ws://ws.ifelse.io/");
+    private webSocket = new WebSocket("ws://localhost:8377/Design_Time_Addresses/G/");
 
     constructor() {
         this.webSocket.onmessage = e => {
