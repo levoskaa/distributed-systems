@@ -23,7 +23,7 @@ namespace WebSocket
                 httpListener.BeginGetContext(OnHttpRequest, httpListener);
                 Console.WriteLine("Service is up");
                 Console.ReadLine();
-                httpListener.Stop();
+                httpListener.Close();
             }
         }
 
@@ -40,8 +40,7 @@ namespace WebSocket
             }
             foreach (var s in tempSessions)
             {
-                s.WsContext.WebSocket.SendAsync(new ArraySegment<byte>(buffer),
-                WebSocketMessageType.Text, true, CancellationToken.None);
+                s.WsContext.WebSocket.SendAsync(new ArraySegment<byte>(buffer), WebSocketMessageType.Text, true, CancellationToken.None);
             }
         }
 
@@ -66,7 +65,6 @@ namespace WebSocket
             var buffer = new byte[10000];
             while (true)
             {
-                var packet = await ws.WebSocket.ReceiveAsync(new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
                 Session currentSession;
                 lock (game)
                 {
@@ -76,6 +74,7 @@ namespace WebSocket
                         WsContext = ws
                     });
                 }
+                var packet = await ws.WebSocket.ReceiveAsync(new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
                 if (packet.MessageType == WebSocketMessageType.Close)
                 {
                     lock (game)
