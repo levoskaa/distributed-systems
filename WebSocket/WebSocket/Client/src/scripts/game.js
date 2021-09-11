@@ -12,30 +12,44 @@ class Game {
         window.onkeyup = e => this.onKey(e, false);
     }
     onMessage(event) {
+        this.game = JSON.parse(event.data);
+        this.gameFrameTime = 0;
+        if (!this.requestAnimationFrameId) {
+            this.requestAnimationFrameId = requestAnimationFrame((time) => this.draw(time));
+        }
+    }
+    extrapolate(position, speed) {
+        return { X: position.X + speed.X * this.extraTime, Y: position.Y + speed.Y * this.extraTime };
+    }
+    draw(time) {
+        if (!this.gameFrameTime) {
+            this.gameFrameTime = time;
+        }
+        this.extraTime = (time - this.gameFrameTime) * 0.01;
         const ctx = this.canvas.getContext("2d");
         if (!ctx) {
             return;
         }
-        const game = JSON.parse(event.data);
         ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         // Draw spaceships
         ctx.fillStyle = "#3355FF";
         ctx.strokeStyle = "#000080";
-        for (const p of game.Spaceships) {
-            this.drawCircle(ctx, p.Position, 1);
+        for (const spaceship of this.game.Spaceships) {
+            this.drawCircle(ctx, this.extrapolate(spaceship.Position, spaceship.Speed), 1);
         }
         // Draw asteroids
         ctx.fillStyle = "#aaaaaa";
         ctx.strokeStyle = "#333333";
-        for (const p of game.Asteroids) {
-            this.drawCircle(ctx, p.Position, p.R);
+        for (const asteroid of this.game.Asteroids) {
+            this.drawCircle(ctx, asteroid.Position, asteroid.R);
         }
         // Draw missiles
         ctx.fillStyle = "#ff8080";
         ctx.strokeStyle = "#990000";
-        for (const p of game.Missiles) {
-            this.drawCircle(ctx, p.Position, 0.5);
+        for (const missile of this.game.Missiles) {
+            this.drawCircle(ctx, this.extrapolate(missile.Position, missile.Speed), 0.5);
         }
+        requestAnimationFrame(time => this.draw(time));
     }
     drawCircle(context, position, radius) {
         context.beginPath();
