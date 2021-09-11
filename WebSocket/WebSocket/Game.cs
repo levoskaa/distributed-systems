@@ -72,7 +72,7 @@ namespace WebSocket
                 for (int j = Asteroids.Count - 1; j >= 0; j--)
                 {
                     var asteroid = Asteroids[j];
-                    if ((missile.Position - asteroid.Position).Length < 1.5)
+                    if ((missile.Position - asteroid.Position).Length < 0.5 + asteroid.R)
                     {
                         Missiles.RemoveAt(i);
                         break;
