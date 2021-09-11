@@ -63,18 +63,23 @@ namespace WebSocket
         {
             var ws = await context.AcceptWebSocketAsync(null);
             var buffer = new byte[10000];
+            Session currentSession;
+            lock (game)
+            {
+                sessions.Add(currentSession = new Session
+                {
+                    Spaceship = game.AddNewSpaceship(),
+                    WsContext = ws
+                });
+            }
             while (true)
             {
-                Session currentSession;
+                var packet = await ws.WebSocket.ReceiveAsync(new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
+                var clientData = new JavaScriptSerializer().Deserialize<ClientData>(Encoding.UTF8.GetString(buffer, 0, packet.Count));
                 lock (game)
                 {
-                    sessions.Add(currentSession = new Session
-                    {
-                        Spaceship = game.AddNewSpaceship(),
-                        WsContext = ws
-                    });
+                    game.ProcessClientData(currentSession.Spaceship, clientData);
                 }
-                var packet = await ws.WebSocket.ReceiveAsync(new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
                 if (packet.MessageType == WebSocketMessageType.Close)
                 {
                     lock (game)

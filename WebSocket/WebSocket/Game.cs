@@ -31,6 +31,21 @@ namespace WebSocket
             return spaceship;
         }
 
+        public void ProcessClientData(Spaceship spaceship, ClientData clientData)
+        {
+            spaceship.Name = clientData.Name;
+            spaceship.Acceleration = clientData.Acceleration * 0.1;
+            if (clientData.Shoot)
+            {
+                Missiles.Add(new Missile
+                {
+                    OwnerId = spaceship.Id,
+                    Position = spaceship.Position,
+                    Speed = spaceship.Speed * 2
+                });
+            }
+        }
+
         public void Step()
         {
             foreach (var spaceship in Spaceships)
