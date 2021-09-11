@@ -75,11 +75,6 @@ namespace WebSocket
             while (true)
             {
                 var packet = await ws.WebSocket.ReceiveAsync(new ArraySegment<byte>(buffer, 0, buffer.Length), CancellationToken.None);
-                var clientData = new JavaScriptSerializer().Deserialize<ClientData>(Encoding.UTF8.GetString(buffer, 0, packet.Count));
-                lock (game)
-                {
-                    game.ProcessClientData(currentSession.Spaceship, clientData);
-                }
                 if (packet.MessageType == WebSocketMessageType.Close)
                 {
                     lock (game)
@@ -87,6 +82,11 @@ namespace WebSocket
                         sessions.Remove(currentSession);
                     }
                     break;
+                }
+                var clientData = new JavaScriptSerializer().Deserialize<ClientData>(Encoding.UTF8.GetString(buffer, 0, packet.Count));
+                lock (game)
+                {
+                    game.ProcessClientData(currentSession.Spaceship, clientData);
                 }
             }
         }
