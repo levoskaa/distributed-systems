@@ -56,6 +56,29 @@ namespace WebSocket
             {
                 Move(ref missile.Position, ref missile.Speed, new Vector());
             }
+            for (int i = Missiles.Count - 1; i >= 0; i--)
+            {
+                var missile = Missiles[i];
+                for (int j = Spaceships.Count - 1; j >= 0; j--)
+                {
+                    var spaceship = Spaceships[j];
+                    if (missile.OwnerId != spaceship.Id && (missile.Position - spaceship.Position).Length < 1.5)
+                    {
+                        Missiles.RemoveAt(i);
+                        Spaceships.RemoveAt(j);
+                        break;
+                    }
+                }
+                for (int j = Asteroids.Count - 1; j >= 0; j--)
+                {
+                    var asteroid = Asteroids[j];
+                    if ((missile.Position - asteroid.Position).Length < 1.5)
+                    {
+                        Missiles.RemoveAt(i);
+                        break;
+                    }
+                }
+            }
         }
 
         private void Move(ref Point p, ref Vector s, Vector a)
