@@ -1,0 +1,855 @@
+2015-01-23 08:15:51,242 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:15:51,339 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:15:51,411 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:15:52,182 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:15:52,186 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:15:52,182 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:15:52,182 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:15:52,193 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:15:52,194 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-2) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:15:52,199 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:15:52,228 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:15:52,235 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:15:52,270 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-23 08:15:52,542 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:15:52,660 WARN  [jacorb.codeset] (MSC service thread 1-5) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:15:52,666 INFO  [org.jboss.as.jacorb] (MSC service thread 1-5) JBAS016330: CORBA ORB Service started
+2015-01-23 08:15:52,720 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:15:52,730 INFO  [org.jboss.as.jacorb] (MSC service thread 1-8) JBAS016328: CORBA Naming Service started
+2015-01-23 08:15:52,766 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2184ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:15:52,776 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:15:52,829 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015973: Starting subdeployment (runtime-name: "CalcClient.jar")
+2015-01-23 08:15:52,829 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:15:52,920 WARN  [org.jboss.modules] (MSC service thread 1-3) Failed to define class demo.CalculatorRemote in Module "deployment.EJBDemoEAR.ear.EJBDemoClient.jar:main" from Service Module Loader: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+
+2015-01-23 08:15:52,935 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:15:52,942 WARN  [org.jboss.modules] (MSC service thread 1-3) Failed to define class demo.Calculator in Module "deployment.EJBDemoEAR.ear.EJBDemo.jar:main" from Service Module Loader: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+
+2015-01-23 08:15:52,960 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-01-23 08:15:52,993 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.subunit."EJBDemoEAR.ear"."CalcClient.jar".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."EJBDemoEAR.ear"."CalcClient.jar".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment "CalcClient.jar" of deployment "EJBDemoEAR.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+Caused by: java.lang.RuntimeException: JBAS013224: Could not load application client main class
+	at org.jboss.as.appclient.deployment.ApplicationClientManifestProcessor.deploy(ApplicationClientManifestProcessor.java:80) [wildfly-appclient-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: Main from [Module "deployment.EJBDemoEAR.ear.CalcClient.jar:main" from Service Module Loader]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:213) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.appclient.deployment.ApplicationClientManifestProcessor.deploy(ApplicationClientManifestProcessor.java:69) [wildfly-appclient-8.2.0.Final.jar:8.2.0.Final]
+	... 6 more
+
+2015-01-23 08:15:53,008 ERROR [org.jboss.as.controller.management-operation] (Thread-34) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "EJBDemoEAR.ear")]) - failure description: {"JBAS014671: Failed services" => {
+    "jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"EJBDemo.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0",
+    "jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"CalcClient.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"CalcClient.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"CalcClient.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.RuntimeException: JBAS013224: Could not load application client main class
+    Caused by: java.lang.ClassNotFoundException: Main from [Module \"deployment.EJBDemoEAR.ear.CalcClient.jar:main\" from Service Module Loader]"
+}}
+2015-01-23 08:15:53,012 ERROR [org.jboss.as.server] (Thread-34) JBAS015870: Deploy of deployment "EJBDemoEAR.ear" was rolled back with the following failure message: 
+{"JBAS014671: Failed services" => {
+    "jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"EJBDemo.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0",
+    "jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"CalcClient.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"CalcClient.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"CalcClient.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.RuntimeException: JBAS013224: Could not load application client main class
+    Caused by: java.lang.ClassNotFoundException: Main from [Module \"deployment.EJBDemoEAR.ear.CalcClient.jar:main\" from Service Module Loader]"
+}}
+2015-01-23 08:15:53,023 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 11ms
+2015-01-23 08:15:53,023 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015974: Stopped subdeployment (runtime-name: CalcClient.jar) in 11ms
+2015-01-23 08:15:53,026 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 15ms
+2015-01-23 08:15:53,027 INFO  [org.jboss.as.controller] (Thread-34) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE
+      service jboss.deployment.subunit."EJBDemoEAR.ear"."CalcClient.jar".POST_MODULE
+
+2015-01-23 08:15:53,037 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:15:53,039 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:15:53,042 INFO  [org.jboss.as] (MSC service thread 1-7) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 7ms
+2015-01-23 08:17:18,106 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:17:18,201 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:17:18,263 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:17:18,991 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:17:19,000 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:17:19,003 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:17:19,005 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:17:19,009 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:17:19,015 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:17:19,016 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:17:19,032 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:17:19,034 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:17:19,074 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-23 08:17:19,317 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:17:19,453 WARN  [jacorb.codeset] (MSC service thread 1-1) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:17:19,459 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
+2015-01-23 08:17:19,516 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:17:19,523 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016328: CORBA Naming Service started
+2015-01-23 08:17:19,585 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 1814ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:17:19,595 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:17:19,657 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:17:19,657 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015973: Starting subdeployment (runtime-name: "CalcClient.jar")
+2015-01-23 08:17:19,748 WARN  [org.jboss.modules] (MSC service thread 1-5) Failed to define class demo.CalculatorRemote in Module "deployment.EJBDemoEAR.ear.EJBDemoClient.jar:main" from Service Module Loader: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+
+2015-01-23 08:17:19,756 WARN  [org.jboss.modules] (MSC service thread 1-5) Failed to define class demo.Calculator in Module "deployment.EJBDemoEAR.ear.EJBDemo.jar:main" from Service Module Loader: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+
+2015-01-23 08:17:19,768 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-5) MSC000001: Failed to start service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:166) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881) [jboss-msc-1.2.2.Final.jar:1.2.2.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_45]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_45]
+	at java.lang.Thread.run(Thread.java:744) [rt.jar:1.7.0_45]
+Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at java.lang.ClassLoader.defineClass1(Native Method) [rt.jar:1.7.0_45]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800) [rt.jar:1.7.0_45]
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:361) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:482) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:277) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:92) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.Module.loadModuleClass(Module.java:568) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:205) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:459) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassChecked(ConcurrentClassLoader.java:408) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:389) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:134) [jboss-modules.jar:1.3.3.Final]
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.getEjbClass(BusinessViewAnnotationProcessor.java:229)
+	at org.jboss.as.ejb3.deployment.processors.BusinessViewAnnotationProcessor.deploy(BusinessViewAnnotationProcessor.java:98)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:159) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	... 5 more
+
+2015-01-23 08:17:19,777 ERROR [org.jboss.as.controller.management-operation] (Thread-35) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "EJBDemoEAR.ear")]) - failure description: {"JBAS014671: Failed services" => {"jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"EJBDemo.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0"}}
+2015-01-23 08:17:19,780 ERROR [org.jboss.as.server] (Thread-35) JBAS015870: Deploy of deployment "EJBDemoEAR.ear" was rolled back with the following failure message: 
+{"JBAS014671: Failed services" => {"jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.subunit.\"EJBDemoEAR.ear\".\"EJBDemo.jar\".POST_MODULE: JBAS018733: Failed to process phase POST_MODULE of subdeployment \"EJBDemo.jar\" of deployment \"EJBDemoEAR.ear\"
+    Caused by: java.lang.UnsupportedClassVersionError: demo/CalculatorRemote : Unsupported major.minor version 52.0"}}
+2015-01-23 08:17:19,799 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-1) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:17:19,848 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 66ms
+2015-01-23 08:17:19,848 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: CalcClient.jar) in 66ms
+2015-01-23 08:17:19,851 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 70ms
+2015-01-23 08:17:19,852 INFO  [org.jboss.as.controller] (Thread-35) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.module.EJBDemoEAR.CalcClient (missing) dependents: [service jboss.deployment.subunit."EJBDemoEAR.ear"."CalcClient.jar".INSTALL] 
+JBAS014777:   Services which failed to start:      service jboss.deployment.subunit."EJBDemoEAR.ear"."EJBDemo.jar".POST_MODULE
+
+2015-01-23 08:17:19,864 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:17:19,867 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:17:19,870 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 9ms
+2015-01-23 08:18:08,709 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:18:08,815 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:18:08,879 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:18:10,186 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:18:10,207 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:18:10,212 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:18:10,254 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-6) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:18:10,256 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:18:10,257 INFO  [org.jboss.as.security] (MSC service thread 1-4) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:18:10,259 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:18:10,261 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:18:10,317 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:18:10,416 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-23 08:18:10,695 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:18:10,747 WARN  [jacorb.codeset] (MSC service thread 1-8) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:18:10,753 INFO  [org.jboss.as.jacorb] (MSC service thread 1-8) JBAS016330: CORBA ORB Service started
+2015-01-23 08:18:10,868 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:18:10,873 INFO  [org.jboss.as.jacorb] (MSC service thread 1-8) JBAS016328: CORBA Naming Service started
+2015-01-23 08:18:10,908 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2515ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:18:10,916 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:18:10,972 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015973: Starting subdeployment (runtime-name: "CalcClient.jar")
+2015-01-23 08:18:10,972 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:18:11,065 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:18:11,202 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:18:11,262 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:18:11,274 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:18:11,284 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:18:11,344 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:18:11,461 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:18:11,470 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@aad0cff, receiver=Remoting connection EJB receiver [connection=Remoting connection <56a2fba2>,channel=jboss.ejb,nodename=timon]} on channel Channel ID bec1ef22 (outbound) of Remoting connection 3cd63ee4 to localhost/127.0.0.1:8080
+2015-01-23 08:18:11,773 INFO  [stdout] (Thread-44) 8
+2015-01-23 08:18:11,775 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-9) EJBCLIENT000016: Channel Channel ID bec1ef22 (outbound) of Remoting connection 3cd63ee4 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:18:11,795 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:18:11,799 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:18:11,813 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:18:11,859 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 73ms
+2015-01-23 08:18:11,860 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: CalcClient.jar) in 76ms
+2015-01-23 08:18:11,863 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 79ms
+2015-01-23 08:18:11,866 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 80ms
+2015-01-23 08:20:06,210 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:20:06,311 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:20:06,371 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:20:07,679 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:20:07,689 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:20:07,691 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:20:07,698 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:20:07,695 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:20:07,700 INFO  [org.jboss.as.security] (MSC service thread 1-7) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:20:07,751 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:20:07,866 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-5) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:20:07,873 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-23 08:20:07,888 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:20:08,137 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:20:08,269 WARN  [jacorb.codeset] (MSC service thread 1-1) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:20:08,275 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016330: CORBA ORB Service started
+2015-01-23 08:20:08,393 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016328: CORBA Naming Service started
+2015-01-23 08:20:08,395 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:20:08,424 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2511ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:20:08,433 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:20:08,495 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:20:08,495 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015973: Starting subdeployment (runtime-name: "CalcClient.jar")
+2015-01-23 08:20:08,579 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-8) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:20:08,677 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:20:08,688 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:20:08,700 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:20:08,712 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:20:08,774 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:20:08,863 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:20:08,872 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@3add338c, receiver=Remoting connection EJB receiver [connection=Remoting connection <56a2fba2>,channel=jboss.ejb,nodename=timon]} on channel Channel ID e2243c3e (outbound) of Remoting connection 7a9b79c6 to localhost/127.0.0.1:8080
+2015-01-23 08:20:08,927 INFO  [stdout] (Thread-44) Result is:8
+2015-01-23 08:20:08,931 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-9) EJBCLIENT000016: Channel Channel ID e2243c3e (outbound) of Remoting connection 7a9b79c6 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:20:08,951 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:20:08,953 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:20:08,966 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:20:09,013 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 70ms
+2015-01-23 08:20:09,014 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015974: Stopped subdeployment (runtime-name: CalcClient.jar) in 71ms
+2015-01-23 08:20:09,017 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 75ms
+2015-01-23 08:20:09,021 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 70ms
+2015-01-23 08:29:30,721 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:29:30,825 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:29:30,886 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:29:32,181 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:29:32,205 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-4) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:29:32,211 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:29:32,245 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:29:32,251 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:29:32,255 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:29:32,261 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:29:32,271 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:29:32,285 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:29:32,434 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-23 08:29:32,663 WARN  [jacorb.codeset] (MSC service thread 1-7) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:29:32,679 INFO  [org.jboss.as.jacorb] (MSC service thread 1-7) JBAS016330: CORBA ORB Service started
+2015-01-23 08:29:32,689 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:29:32,746 INFO  [org.jboss.as.jacorb] (MSC service thread 1-7) JBAS016328: CORBA Naming Service started
+2015-01-23 08:29:32,846 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:29:32,879 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2470ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:29:32,887 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:29:32,962 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:29:32,962 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:29:33,051 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:29:33,058 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:29:33,142 INFO  [org.jboss.as.server] (Thread-37) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:29:33,150 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:29:33,158 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:29:33,169 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:29:33,236 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:29:33,328 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:29:33,336 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@6fa5e948, receiver=Remoting connection EJB receiver [connection=Remoting connection <42142cc>,channel=jboss.ejb,nodename=timon]} on channel Channel ID b58d226c (outbound) of Remoting connection 09d27456 to localhost/127.0.0.1:8080
+2015-01-23 08:29:33,492 INFO  [stdout] (Thread-44) [Second, Third, First]
+2015-01-23 08:29:33,494 INFO  [stdout] (Thread-44) [Elsõ, Második, Harmadik]
+2015-01-23 08:29:33,497 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-3) EJBCLIENT000016: Channel Channel ID b58d226c (outbound) of Remoting connection 09d27456 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:29:33,513 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:29:33,517 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:29:33,530 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:29:33,578 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 73ms
+2015-01-23 08:29:33,579 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 74ms
+2015-01-23 08:29:33,582 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 78ms
+2015-01-23 08:29:33,586 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 81ms
+2015-01-23 08:30:03,932 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:30:04,036 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:30:04,095 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:30:05,381 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:30:05,384 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:30:05,441 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:30:05,444 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:30:05,448 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:30:05,457 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:30:05,458 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:30:05,461 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:30:05,466 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:30:05,475 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-01-23 08:30:05,808 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:30:05,889 WARN  [jacorb.codeset] (MSC service thread 1-5) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:30:05,897 INFO  [org.jboss.as.jacorb] (MSC service thread 1-5) JBAS016330: CORBA ORB Service started
+2015-01-23 08:30:06,027 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:30:06,032 INFO  [org.jboss.as.jacorb] (MSC service thread 1-2) JBAS016328: CORBA Naming Service started
+2015-01-23 08:30:06,066 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2436ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:30:06,075 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:30:06,165 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:30:06,165 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:30:06,262 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:30:06,267 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-4) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:30:06,357 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:30:06,367 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:30:06,379 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:30:06,390 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:30:06,450 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:30:06,539 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:30:06,546 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@555e2533, receiver=Remoting connection EJB receiver [connection=Remoting connection <7ec9d0e2>,channel=jboss.ejb,nodename=timon]} on channel Channel ID b36214ad (outbound) of Remoting connection 39d4f0a8 to localhost/127.0.0.1:8080
+2015-01-23 08:30:06,634 ERROR [org.jboss.as.appclient.logging] (Thread-44) JBAS013201: InvocationTargetException running app client main: java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [rt.jar:1.8.0_25]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) [rt.jar:1.8.0_25]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) [rt.jar:1.8.0_25]
+	at java.lang.reflect.Method.invoke(Method.java:483) [rt.jar:1.8.0_25]
+	at org.jboss.as.appclient.service.ApplicationClientStartService$1.run(ApplicationClientStartService.java:120)
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: javax.ejb.EJBException: java.lang.IllegalStateException: JBAS014366: Session id hasn't been set for stateful component: StringStore
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.handleExceptionInOurTx(CMTTxInterceptor.java:190) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:275) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:340) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.remote.EJBRemoteTransactionPropagatingInterceptor.processInvocation(EJBRemoteTransactionPropagatingInterceptor.java:79) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:95) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:448)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185)
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler.invokeMethod(MethodInvocationMessageHandler.java:330) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler.access$100(MethodInvocationMessageHandler.java:70) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler$1.run(MethodInvocationMessageHandler.java:203) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [rt.jar:1.8.0_25]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.ejb.client.remoting.InvocationExceptionResponseHandler$MethodInvocationExceptionResultProducer.getResult(InvocationExceptionResponseHandler.java:96) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:276) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBObjectInterceptor.handleInvocationResult(EJBObjectInterceptor.java:64) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:290) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBHomeInterceptor.handleInvocationResult(EJBHomeInterceptor.java:88) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:290) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.TransactionInterceptor.handleInvocationResult(TransactionInterceptor.java:46) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:290) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.ReceiverInterceptor.handleInvocationResult(ReceiverInterceptor.java:129) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.getResult(EJBClientInvocationContext.java:265) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBClientInvocationContext.awaitResponse(EJBClientInvocationContext.java:453) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:202) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBInvocationHandler.doInvoke(EJBInvocationHandler.java:181) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at org.jboss.ejb.client.EJBInvocationHandler.invoke(EJBInvocationHandler.java:144) [jboss-ejb-client-2.0.1.Final.jar:2.0.1.Final]
+	at com.sun.proxy.$Proxy12.add(Unknown Source)
+	at Main.main(Main.java:13)	... 6 more
+Caused by: java.lang.IllegalStateException: JBAS014366: Session id hasn't been set for stateful component: StringStore
+	at org.jboss.as.ejb3.component.stateful.StatefulComponentInstanceInterceptor.processInvocation(StatefulComponentInstanceInterceptor.java:56) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.invokeInOurTx(CMTTxInterceptor.java:273) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.required(CMTTxInterceptor.java:340) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.tx.CMTTxInterceptor.processInvocation(CMTTxInterceptor.java:239) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.remote.EJBRemoteTransactionPropagatingInterceptor.processInvocation(EJBRemoteTransactionPropagatingInterceptor.java:79) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.CurrentInvocationContextInterceptor.processInvocation(CurrentInvocationContextInterceptor.java:41) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.invocationmetrics.WaitTimeInterceptor.processInvocation(WaitTimeInterceptor.java:43) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.security.SecurityContextInterceptor.processInvocation(SecurityContextInterceptor.java:95) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.ShutDownInterceptorFactory$1.processInvocation(ShutDownInterceptorFactory.java:64) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.LoggingInterceptor.processInvocation(LoggingInterceptor.java:59) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.component.NamespaceContextInterceptor.processInvocation(NamespaceContextInterceptor.java:50)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ejb3.component.interceptors.AdditionalSetupInterceptor.processInvocation(AdditionalSetupInterceptor.java:55) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:448)
+	at org.jboss.invocation.AccessCheckingInterceptor.processInvocation(AccessCheckingInterceptor.java:61)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.ViewService$View.invoke(ViewService.java:185)
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler.invokeMethod(MethodInvocationMessageHandler.java:330) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler.access$100(MethodInvocationMessageHandler.java:70) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.ejb3.remote.protocol.versionone.MethodInvocationMessageHandler$1.run(MethodInvocationMessageHandler.java:203) [wildfly-ejb3-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [rt.jar:1.8.0_25]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+
+2015-01-23 08:30:06,660 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-9) EJBCLIENT000016: Channel Channel ID b36214ad (outbound) of Remoting connection 39d4f0a8 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:30:06,680 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:30:06,683 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:30:06,697 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:30:06,743 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 74ms
+2015-01-23 08:30:06,744 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 75ms
+2015-01-23 08:30:06,747 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 79ms
+2015-01-23 08:30:06,750 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 81ms
+2015-01-23 08:30:37,516 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:30:37,621 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:30:37,680 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:30:38,968 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:30:38,971 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:30:38,972 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:30:38,981 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:30:38,981 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:30:38,994 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:30:39,001 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:30:39,002 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:30:39,015 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-01-23 08:30:39,016 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:30:39,307 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:30:39,488 WARN  [jacorb.codeset] (MSC service thread 1-2) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:30:39,493 INFO  [org.jboss.as.jacorb] (MSC service thread 1-2) JBAS016330: CORBA ORB Service started
+2015-01-23 08:30:39,627 INFO  [org.jboss.as.jacorb] (MSC service thread 1-2) JBAS016328: CORBA Naming Service started
+2015-01-23 08:30:39,629 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:30:39,661 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2451ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:30:39,669 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:30:39,752 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:30:39,752 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:30:39,839 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:30:39,841 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-1) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:30:39,930 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:30:39,941 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:30:39,954 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:30:39,966 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:30:40,027 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:30:40,138 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:30:40,146 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@764d589b, receiver=Remoting connection EJB receiver [connection=Remoting connection <6d0d5fb9>,channel=jboss.ejb,nodename=timon]} on channel Channel ID a4d65b0a (outbound) of Remoting connection 099930bd to localhost/127.0.0.1:8080
+2015-01-23 08:30:40,234 INFO  [stdout] (Thread-44) []
+2015-01-23 08:30:40,239 INFO  [stdout] (Thread-44) []
+2015-01-23 08:30:40,248 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-1) EJBCLIENT000016: Channel Channel ID a4d65b0a (outbound) of Remoting connection 099930bd to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:30:40,263 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:30:40,271 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:30:40,279 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:30:40,325 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 69ms
+2015-01-23 08:30:40,324 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 69ms
+2015-01-23 08:30:40,328 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 75ms
+2015-01-23 08:30:40,331 INFO  [org.jboss.as] (MSC service thread 1-3) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 75ms
+2015-01-23 08:31:04,996 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:31:05,105 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:31:05,167 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:31:06,478 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:31:06,489 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:31:06,491 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:31:06,501 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:31:06,501 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:31:06,504 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:31:06,526 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-8) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:31:06,529 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:31:06,529 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:31:06,683 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-01-23 08:31:06,893 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:31:07,044 WARN  [jacorb.codeset] (MSC service thread 1-3) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:31:07,051 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016330: CORBA ORB Service started
+2015-01-23 08:31:07,201 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016328: CORBA Naming Service started
+2015-01-23 08:31:07,202 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:31:07,237 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2565ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:31:07,246 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:31:07,325 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:31:07,325 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:31:07,412 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:31:07,419 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:31:07,507 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:31:07,517 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:31:07,529 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:31:07,540 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:31:07,600 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:31:07,693 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:31:07,701 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@12dfe8d8, receiver=Remoting connection EJB receiver [connection=Remoting connection <5d1e3e13>,channel=jboss.ejb,nodename=timon]} on channel Channel ID 9a403882 (outbound) of Remoting connection 267f3195 to localhost/127.0.0.1:8080
+2015-01-23 08:31:07,788 INFO  [stdout] (Thread-44) []
+2015-01-23 08:31:07,792 INFO  [stdout] (Thread-44) []
+2015-01-23 08:31:07,794 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-16) EJBCLIENT000016: Channel Channel ID 9a403882 (outbound) of Remoting connection 267f3195 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:31:07,812 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:31:07,815 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:31:07,827 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:31:07,870 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 67ms
+2015-01-23 08:31:07,870 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 67ms
+2015-01-23 08:31:07,874 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 71ms
+2015-01-23 08:31:07,876 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 73ms
+2015-01-23 08:31:43,694 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:31:43,796 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:31:43,855 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:31:45,157 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:31:45,159 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:31:45,164 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:31:45,169 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:31:45,182 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:31:45,192 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:31:45,204 INFO  [org.jboss.as.naming] (MSC service thread 1-6) JBAS011802: Starting Naming Service
+2015-01-23 08:31:45,224 INFO  [org.jboss.as.security] (MSC service thread 1-2) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:31:45,228 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:31:45,233 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:31:45,601 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:31:45,722 WARN  [jacorb.codeset] (MSC service thread 1-7) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:31:45,731 INFO  [org.jboss.as.jacorb] (MSC service thread 1-7) JBAS016330: CORBA ORB Service started
+2015-01-23 08:31:45,876 INFO  [org.jboss.as.jacorb] (MSC service thread 1-5) JBAS016328: CORBA Naming Service started
+2015-01-23 08:31:45,877 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:31:45,912 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2519ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:31:45,922 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:31:45,990 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:31:45,990 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:31:46,080 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:31:46,088 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:31:46,172 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:31:46,180 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:31:46,188 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:31:46,201 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:31:46,263 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:31:46,353 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:31:46,360 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@36ae6a7b, receiver=Remoting connection EJB receiver [connection=Remoting connection <3399a633>,channel=jboss.ejb,nodename=timon]} on channel Channel ID 8ae9c788 (outbound) of Remoting connection 09ae9439 to localhost/127.0.0.1:8080
+2015-01-23 08:31:46,396 ERROR [org.jboss.as.appclient.logging] (Thread-44) JBAS013201: IllegalStateException running app client main: java.lang.IllegalStateException: JBAS011048: Failed to construct component instance
+	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:162)
+	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:133)
+	at org.jboss.as.ee.component.BasicComponent.createInstance(BasicComponent.java:89)
+	at org.jboss.as.appclient.service.ApplicationClientStartService$1.run(ApplicationClientStartService.java:118)
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+Caused by: java.lang.RuntimeException: JBAS016704: ManagedReference was null and injection is not optional for injection into field private static demo.StringStoreRemote Main.store1
+	at org.jboss.as.ee.component.ManagedReferenceFieldInjectionInterceptorFactory$ManagedReferenceFieldInjectionInterceptor.processInvocation(ManagedReferenceFieldInjectionInterceptorFactory.java:103)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.WeavedInterceptor.processInvocation(WeavedInterceptor.java:53)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.component.AroundConstructInterceptorFactory$1.processInvocation(AroundConstructInterceptorFactory.java:28)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.as.ee.concurrent.ConcurrentContextInterceptor.processInvocation(ConcurrentContextInterceptor.java:45) [wildfly-ee-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ContextClassLoaderInterceptor.processInvocation(ContextClassLoaderInterceptor.java:64)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.InterceptorContext.run(InterceptorContext.java:326)
+	at org.jboss.invocation.PrivilegedWithCombinerInterceptor.processInvocation(PrivilegedWithCombinerInterceptor.java:80)
+	at org.jboss.invocation.InterceptorContext.proceed(InterceptorContext.java:309)
+	at org.jboss.invocation.ChainedInterceptor.processInvocation(ChainedInterceptor.java:61)
+	at org.jboss.as.ee.component.BasicComponent.constructComponentInstance(BasicComponent.java:160)
+	... 4 more
+
+2015-01-23 08:31:46,405 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-10) EJBCLIENT000016: Channel Channel ID 8ae9c788 (outbound) of Remoting connection 09ae9439 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:31:46,424 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:31:46,432 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:31:46,443 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:31:46,491 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 76ms
+2015-01-23 08:31:46,492 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 77ms
+2015-01-23 08:31:46,495 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 81ms
+2015-01-23 08:31:46,500 INFO  [org.jboss.as] (MSC service thread 1-2) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 80ms
+2015-01-23 08:33:15,670 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-23 08:33:15,771 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-23 08:33:15,830 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-23 08:33:17,125 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 21) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-23 08:33:17,126 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 22) JBAS015537: Activating WebServices Extension
+2015-01-23 08:33:17,136 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 16) JBAS016300: Activating JacORB Subsystem
+2015-01-23 08:33:17,163 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 19) JBAS011800: Activating Naming Subsystem
+2015-01-23 08:33:17,165 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 20) JBAS013171: Activating Security Subsystem
+2015-01-23 08:33:17,186 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-23 08:33:17,187 INFO  [org.jboss.as.security] (MSC service thread 1-5) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-23 08:33:17,209 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-01-23 08:33:17,253 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 13) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-23 08:33:17,256 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-01-23 08:33:17,514 INFO  [org.jboss.ws.common.management] (MSC service thread 1-6) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-23 08:33:17,704 WARN  [jacorb.codeset] (MSC service thread 1-3) Warning - unknown codeset (Cp1250) - defaulting to ISO-8859-1
+2015-01-23 08:33:17,712 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016330: CORBA ORB Service started
+2015-01-23 08:33:17,842 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:33:17,844 INFO  [org.jboss.as.jacorb] (MSC service thread 1-3) JBAS016328: CORBA Naming Service started
+2015-01-23 08:33:17,878 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015874: WildFly 8.2.0.Final "Tweek" started in 2509ms - Started 118 of 120 services (9 services are lazy, passive or on-demand)
+2015-01-23 08:33:17,886 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "EJBDemoEAR.ear" (runtime-name: "EJBDemoEAR.ear")
+2015-01-23 08:33:17,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015973: Starting subdeployment (runtime-name: "EJBDemo.jar")
+2015-01-23 08:33:17,945 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015973: Starting subdeployment (runtime-name: "StringClient.jar")
+2015-01-23 08:33:18,040 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named Calculator in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+	java:app/EJBDemo/Calculator!demo.CalculatorRemote
+	java:module/Calculator!demo.CalculatorRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/Calculator!demo.CalculatorRemote
+
+2015-01-23 08:33:18,048 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-2) JNDI bindings for session bean named StringStore in deployment unit subdeployment "EJBDemo.jar" of deployment "EJBDemoEAR.ear" are as follows:
+
+	java:global/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+	java:app/EJBDemo/StringStore!demo.StringStoreRemote
+	java:module/StringStore!demo.StringStoreRemote
+	java:jboss/exported/EJBDemoEAR/EJBDemo/StringStore!demo.StringStoreRemote
+
+2015-01-23 08:33:18,145 INFO  [org.jboss.as.server] (Thread-35) JBAS018559: Deployed "EJBDemoEAR.ear" (runtime-name : "EJBDemoEAR.ear")
+2015-01-23 08:33:18,153 INFO  [org.jboss.ejb.client] (Thread-44) JBoss EJB Client version 2.0.1.Final
+2015-01-23 08:33:18,161 INFO  [org.xnio] (Thread-44) XNIO version 3.3.0.Final
+2015-01-23 08:33:18,173 INFO  [org.xnio.nio] (Thread-44) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-23 08:33:18,238 INFO  [org.jboss.remoting] (Thread-44) JBoss Remoting version 4.0.6.Final
+2015-01-23 08:33:18,327 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-5) EJBCLIENT000017: Received server version 2 and marshalling strategies [river]
+2015-01-23 08:33:18,334 INFO  [org.jboss.ejb.client.remoting] (Thread-44) EJBCLIENT000013: Successful version handshake completed for receiver context EJBReceiverContext{clientContext=org.jboss.ejb.client.EJBClientContext@2b40e46e, receiver=Remoting connection EJB receiver [connection=Remoting connection <4e2a7794>,channel=jboss.ejb,nodename=timon]} on channel Channel ID a50ed5b7 (outbound) of Remoting connection 2379b716 to localhost/127.0.0.1:8080
+2015-01-23 08:33:18,434 INFO  [stdout] (Thread-44) [Second, Third, First]
+2015-01-23 08:33:18,437 INFO  [stdout] (Thread-44) [Elsõ, Második, Harmadik]
+2015-01-23 08:33:18,440 INFO  [org.jboss.ejb.client.remoting] (Remoting "endpoint" task-2) EJBCLIENT000016: Channel Channel ID a50ed5b7 (outbound) of Remoting connection 2379b716 to localhost/127.0.0.1:8080 can no longer process messages
+2015-01-23 08:33:18,464 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-23 08:33:18,467 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-23 08:33:18,480 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-23 08:33:18,522 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015974: Stopped subdeployment (runtime-name: EJBDemo.jar) in 71ms
+2015-01-23 08:33:18,522 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015974: Stopped subdeployment (runtime-name: StringClient.jar) in 71ms
+2015-01-23 08:33:18,526 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) JBAS015877: Stopped deployment EJBDemoEAR.ear (runtime-name: EJBDemoEAR.ear) in 75ms
+2015-01-23 08:33:18,529 INFO  [org.jboss.as] (MSC service thread 1-8) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 77ms

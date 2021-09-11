@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.hibernate.eclipse.feature"
+      label="%featureName"
+      version="4.0.0.Final-v20141016-1911-B82"
+      provider-name="%providerName"
+      plugin="org.hibernate.eclipse">
+
+   <description url="http://tools.hibernate.org">
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="license.html">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.ui" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jdt.core" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.editors" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.views" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface.text" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.ide" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.console"/>
+      <import plugin="org.eclipse.gef" version="3.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.core" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.debug.ui" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.forms" version="0.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.common.project.facet.core" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.common.project.facet.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.help.ui"/>
+      <import plugin="org.eclipse.wst.xml.core" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.sse.core" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.xml.ui" version="1.0.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.sse.ui" version="1.0.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.dtd.core" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.common.ui" version="1.1.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui.navigator"/>
+      <import plugin="org.eclipse.pde.core"/>
+      <import plugin="org.apache.ant"/>
+      <import plugin="org.junit"/>
+      <import plugin="org.eclipse.jdt.apt.core"/>
+   </requires>
+
+   <plugin
+         id="org.hibernate.eclipse"
+         download-size="234"
+         install-size="255"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.console"
+         download-size="2334"
+         install-size="4887"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.help"
+         download-size="292"
+         install-size="330"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.jdt.apt.ui"
+         download-size="4"
+         install-size="3"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.jdt.ui"
+         download-size="189"
+         install-size="415"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.mapper"
+         download-size="178"
+         install-size="208"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.jpt.core"
+         download-size="322"
+         install-size="773"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.jpt.ui"
+         download-size="331"
+         install-size="784"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.ui"
+         download-size="261"
+         install-size="281"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.xml"
+         download-size="137"
+         install-size="811"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.xml.ui"
+         download-size="60"
+         install-size="132"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.hibernate.eclipse.libs"
+         download-size="12400"
+         install-size="13547"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate3_5"
+         download-size="9873"
+         install-size="10879"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate3_6"
+         download-size="7037"
+         install-size="7822"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate4_0"
+         download-size="7558"
+         install-size="8407"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate4_3"
+         download-size="8157"
+         install-size="9116"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.spi"
+         download-size="30"
+         install-size="38"
+         version="4.0.0.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.dom4j"
+         download-size="287"
+         install-size="308"
+         version="1.6.1.Final-v20141016-1911-B82"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.antlr"
+         download-size="414"
+         install-size="436"
+         version="2.7.7.Final-v20141016-1911-B82"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.jtidy"
+         download-size="232"
+         install-size="244"
+         version="8.0.0.Final-v20141016-1911-B82"/>
+
+   <plugin
+         id="org.jboss.tools.hibernate.beanshell"
+         download-size="135"
+         install-size="142"
+         version="2.0.0.Final-v20141016-1911-B82"/>
+
+</feature>

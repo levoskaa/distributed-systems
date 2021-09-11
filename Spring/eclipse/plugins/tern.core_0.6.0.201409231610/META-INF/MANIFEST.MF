@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Export-Package: tern,tern.angular,tern.angular.modules,tern.angular.pr
+ otocol,tern.angular.protocol.completions,tern.angular.protocol.defini
+ tion,tern.angular.protocol.type,tern.doc,tern.metadata,tern.server,te
+ rn.server.protocol,tern.server.protocol.completions,tern.server.proto
+ col.definition,tern.server.protocol.lint,tern.server.protocol.type,te
+ rn.utils
+Bundle-ActivationPolicy: lazy
+Built-By: jenkins
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Created-By: Apache Maven
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Vendor: %providerName
+Build-Jdk: 1.7.0_51
+Bundle-Version: 0.6.0.201409231610
+Bundle-Activator: tern.Activator
+Bundle-ManifestVersion: 2
+Import-Package: com.eclipsesource.json,org.osgi.framework
+Bundle-SymbolicName: tern.core
+Archiver-Version: Plexus Archiver
+

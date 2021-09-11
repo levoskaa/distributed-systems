@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.jboss.tools.common.jdt.feature" label="%featureName" version="3.6.1.Final-v20141209-0333-B84" provider-name="%providerName" plugin="org.jboss.tools.common.jdt.debug">
+
+	<description>%description</description>
+	<copyright>%copyright</copyright>
+	<license url="%licenseURL">%license</license>
+
+	<plugin id="org.jboss.tools.common.jdt.debug" download-size="23" install-size="44" version="3.6.1.Final-v20141209-0333-B84" unpack="false" />
+	<plugin id="org.jboss.tools.common.jdt.debug.ui" download-size="80" install-size="164" version="3.6.1.Final-v20141209-0333-B84" unpack="false" />
+	<plugin id="org.jboss.tools.common.jdt" download-size="15" install-size="25" version="3.6.1.Final-v20141209-0333-B84" unpack="false" />
+	<plugin id="org.jboss.tools.common.jdt.ui" download-size="29" install-size="53" version="3.6.1.Final-v20141209-0333-B84" unpack="false" />
+</feature>

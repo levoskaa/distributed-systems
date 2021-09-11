@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Export-Package: org.hibernate.console,org.hibernate.console.execution,
+ org.hibernate.console.node,org.hibernate.console.preferences,org.hibe
+ rnate.eclipse,org.hibernate.eclipse.console,org.hibernate.eclipse.con
+ sole.common,org.hibernate.eclipse.console.model.impl,org.hibernate.ec
+ lipse.console.utils,org.hibernate.eclipse.console.workbench,org.hiber
+ nate.eclipse.launch,org.hibernate.eclipse.logging,org.hibernate.eclip
+ se.logging.xpl,org.hibernate.util.xpl,org.jboss.tools.hibernate.excep
+ tion,org.jboss.tools.hibernate.util
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: org.hibernate.eclipse.jar
+Built-By: hudson
+Eclipse-BundleShape: dir
+Bundle-Name: %Bundle-Name.0
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.1.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.core.runtime;bundle-version="3.9.0",org.ec
+ lipse.ui.console;bundle-version="3.5.200",org.eclipse.jface;bundle-ve
+ rsion="3.8.200",org.eclipse.jdt.apt.core;bundle-version="3.3.500",org
+ .eclipse.datatools.connectivity;bundle-version="1.2.7",org.jboss.tool
+ s.hibernate.spi;bundle-version="3.8.0",org.jboss.tools.hibernate.dom4
+ j;bundle-version="1.6.1",org.apache.log4j;bundle-version="1.2.15",org
+ .apache.commons.logging;bundle-version="1.1.1",org.slf4j.api;bundle-v
+ ersion="1.7.2",org.jboss.tools.hibernate.beanshell;bundle-version="2.
+ 0.0",org.eclipse.debug.core;bundle-version="3.9.0",org.eclipse.ui.vie
+ ws;bundle-version="3.7.0",org.eclipse.jface.text;bundle-version="3.9.
+ 0",org.eclipse.core.variables;bundle-version="3.2.800",org.eclipse.ui
+ ;bundle-version="3.106.0",org.eclipse.jdt.core;bundle-version="3.10.0
+ "
+Bundle-Vendor: %Bundle-Vendor.0
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-hibernate.git;path="plugins/org.hibernate.eclipse";commitId=5d95
+ fc1fa78daa6a94ecd5580c98db1712efabcf
+Bundle-Version: 4.0.0.Final-v20141016-1911-B82
+Build-Jdk: 1.7.0_67
+Eclipse-BuddyPolicy: registered
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.hibernate.eclipse.HibernatePlugin
+Bundle-SymbolicName: org.hibernate.eclipse;singleton:=true
+Archiver-Version: Plexus Archiver
+

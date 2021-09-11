@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Export-Package: org.jboss.tools.hibernate.ui.diagram,org.jboss.tools.h
+ ibernate.ui.diagram.editors,org.jboss.tools.hibernate.ui.diagram.edit
+ ors.actions,org.jboss.tools.hibernate.ui.diagram.editors.command,org.
+ jboss.tools.hibernate.ui.diagram.editors.figures,org.jboss.tools.hibe
+ rnate.ui.diagram.editors.model,org.jboss.tools.hibernate.ui.diagram.e
+ ditors.parts,org.jboss.tools.hibernate.ui.view
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: org.jboss.tools.hibernate.ui.jar
+Built-By: hudson
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.1.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.ui;bundle-version="3.105.0",org.eclipse.ui
+ .ide;bundle-version="3.8.100",org.eclipse.ui.views;bundle-version="3.
+ 6.100",org.eclipse.core.runtime;bundle-version="3.9.0",org.eclipse.ge
+ f;bundle-version="3.9.0",org.eclipse.core.resources;bundle-version="3
+ .8.100",org.hibernate.eclipse;bundle-version="3.7.0",org.eclipse.jdt.
+ core;bundle-version="3.9.0",org.eclipse.jdt.ui;bundle-version="3.9.0"
+ ,org.hibernate.eclipse.console;bundle-version="3.7.0",org.jboss.tools
+ .hibernate.spi;bundle-version="3.8.0"
+Bundle-Vendor: %providerName
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-hibernate.git;path="plugins/org.jboss.tools.hibernate.ui";commit
+ Id=5d95fc1fa78daa6a94ecd5580c98db1712efabcf
+Bundle-Version: 4.0.0.Final-v20141016-1911-B82
+Build-Jdk: 1.7.0_67
+Bundle-Activator: org.jboss.tools.hibernate.ui.diagram.UiPlugin
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.ui.actions
+Bundle-SymbolicName: org.jboss.tools.hibernate.ui;singleton:=true
+Archiver-Version: Plexus Archiver
+

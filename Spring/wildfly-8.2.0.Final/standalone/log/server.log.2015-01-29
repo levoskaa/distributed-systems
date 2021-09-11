@@ -1,0 +1,267 @@
+2015-01-29 13:34:37,862 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-29 13:34:39,557 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-29 13:34:39,638 INFO  [org.jboss.as] (MSC service thread 1-6) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-29 13:34:39,644 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_25\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_25\jre
+	java.io.tmpdir = C:\Users\gabor.AUT\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;c:\apache-maven-3.1.0\bin;C:\Program Files\SlikSvn\bin\;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\MATLAB\R2009a\bin;C:\Program Files\MATLAB\R2009a\bin\win64;C:\Program Files\TortoiseHg\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Java\jdk1.7.0_45\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\OpenVPN\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b18
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final
+	jboss.host.name = timon
+	jboss.modules.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = timon
+	jboss.qualified.host.name = timon
+	jboss.server.base.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = timon
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.x
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Java\jdk1.8.0_25\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_25\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone-full.xml -Djboss.server.base.dir=C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\gabor.AUT
+	user.language = en
+	user.name = gabor
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2015-01-29 13:34:39,645 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.x -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=UTF-8 
+2015-01-29 13:34:47,914 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment Auction.war
+2015-01-29 13:34:47,967 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found Auction.war in deployment directory. To trigger deployment create a file called Auction.war.dodeploy
+2015-01-29 13:34:47,967 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found BankApp.war in deployment directory. To trigger deployment create a file called BankApp.war.dodeploy
+2015-01-29 13:34:48,080 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-01-29 13:34:48,405 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.0.Final
+2015-01-29 13:34:48,425 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-29 13:34:48,444 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 35) JBAS010280: Activating Infinispan subsystem.
+2015-01-29 13:34:48,448 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 52) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-29 13:34:48,452 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 51) JBAS013171: Activating Security Subsystem
+2015-01-29 13:34:48,456 INFO  [org.jboss.as.jacorb] (ServerService Thread Pool -- 36) JBAS016300: Activating JacORB Subsystem
+2015-01-29 13:34:48,473 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 42) JBAS012615: Activated the following JSF Implementations: [main]
+2015-01-29 13:34:48,522 INFO  [org.jboss.as.security] (MSC service thread 1-3) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-29 13:34:48,629 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) JBAS011800: Activating Naming Subsystem
+2015-01-29 13:34:48,648 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 54) JBAS015537: Activating WebServices Extension
+2015-01-29 13:34:48,660 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 34) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-01-29 13:34:48,888 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-1) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-29 13:34:49,002 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-29 13:34:49,002 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-29 13:34:49,196 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-29 13:34:49,198 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-01-29 13:34:49,388 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 30) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-29 13:34:49,389 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = h2
+2015-01-29 13:34:49,609 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.6.Final
+2015-01-29 13:34:49,989 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 53) JBAS017527: Creating file handler for path C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final/welcome-content
+2015-01-29 13:34:50,190 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017525: Started server default-server.
+2015-01-29 13:34:50,559 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017531: Host default-host starting
+2015-01-29 13:34:50,621 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-01-29 13:34:51,514 WARN  [org.jboss.as.messaging] (MSC service thread 1-6) JBAS011600: AIO wasn't located on this platform, it will fall back to using pure Java NIO. If your platform is Linux, install LibAIO to enable the AIO journal
+2015-01-29 13:34:51,691 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-3) JBAS015012: Started FileSystemDeploymentService for directory C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\deployments
+2015-01-29 13:34:51,930 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015876: Starting deployment of "Auction.war" (runtime-name: "Auction.war")
+2015-01-29 13:34:51,930 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "BankApp.war" (runtime-name: "BankApp.war")
+2015-01-29 13:34:51,943 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015876: Starting deployment of "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2015-01-29 13:34:52,440 INFO  [org.jboss.as.jacorb] (MSC service thread 1-2) JBAS016330: CORBA ORB Service started
+2015-01-29 13:34:52,499 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_cs.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,523 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_de_DE.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,523 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_es.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,523 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_fr.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,523 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_hu.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_it.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_ja_JP.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_ko_KR.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_pl.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,524 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_pt_BR.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,525 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_ru.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,525 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_zh_CN.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,525 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) JBAS015960: Class Path entry derbyLocale_zh_TW.jar in /C:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-29 13:34:52,936 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-29 13:34:53,770 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221000: live server is starting with configuration HornetQ Configuration (clustered=false,backup=false,sharedStore=true,journalDirectory=C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\messagingjournal,bindingsDirectory=C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\messagingbindings,largeMessagesDirectory=C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\messaginglargemessages,pagingDirectory=C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\messagingpaging)
+2015-01-29 13:34:53,775 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221006: Waiting to obtain live lock
+2015-01-29 13:34:54,073 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221013: Using NIO Journal
+2015-01-29 13:34:54,086 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) JBAS011401: Read persistence.xml for BankApp
+2015-01-29 13:34:54,097 INFO  [org.jboss.as.jacorb] (MSC service thread 1-1) JBAS016328: CORBA Naming Service started
+2015-01-29 13:34:54,159 INFO  [org.jboss.as.jpa] (MSC service thread 1-7) JBAS011401: Read persistence.xml for AuctionPU
+2015-01-29 13:34:54,215 INFO  [io.netty.util.internal.PlatformDependent] (ServerService Thread Pool -- 56) Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2015-01-29 13:34:54,323 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support CORE
+2015-01-29 13:34:54,375 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-29 13:34:54,540 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support AMQP
+2015-01-29 13:34:54,555 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221043: Adding protocol support STOMP
+2015-01-29 13:34:54,640 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010403: Deploying JDBC-compliant driver class org.apache.derby.jdbc.ClientDriver (version 10.10)
+2015-01-29 13:34:54,708 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221034: Waiting to obtain live lock
+2015-01-29 13:34:54,708 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221035: Live Server Obtained live lock
+2015-01-29 13:34:54,765 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) JBAS010417: Started Driver service with driver-name = derbyclient.jar
+2015-01-29 13:34:54,766 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/Derby]
+2015-01-29 13:34:54,906 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 57) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'BankApp.war#BankApp'
+2015-01-29 13:34:55,015 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 57) HHH000204: Processing PersistenceUnitInfo [
+	name: BankApp
+	...]
+2015-01-29 13:34:55,268 INFO  [org.jboss.messaging] (MSC service thread 1-4) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor acceptor
+2015-01-29 13:34:55,272 INFO  [org.jboss.messaging] (MSC service thread 1-7) JBAS011615: Registered HTTP upgrade for hornetq-remoting protocol handled by http-acceptor-throughput acceptor
+2015-01-29 13:34:55,609 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 57) HHH000412: Hibernate Core {4.3.7.Final}
+2015-01-29 13:34:55,611 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 57) HHH000206: hibernate.properties not found
+2015-01-29 13:34:55,627 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 57) HHH000021: Bytecode provider name : javassist
+2015-01-29 13:34:55,724 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221007: Server is now live
+2015-01-29 13:34:55,724 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221001: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [35e4bb28-a2cf-11e4-a6ca-2bc3136321bd] 
+2015-01-29 13:34:55,727 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 56) HQ221003: trying to deploy queue jms.queue.ExpiryQueue
+2015-01-29 13:34:55,732 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 56) JBAS011601: Bound messaging object to jndi name java:/jms/queue/ExpiryQueue
+2015-01-29 13:34:55,780 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 58) HQ221003: trying to deploy queue jms.queue.DLQ
+2015-01-29 13:34:55,782 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 58) JBAS011601: Bound messaging object to jndi name java:/jms/queue/DLQ
+2015-01-29 13:34:55,823 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 60) JBAS011601: Bound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-01-29 13:34:55,824 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 59) JBAS011601: Bound messaging object to jndi name java:/ConnectionFactory
+2015-01-29 13:34:55,917 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-3) JBAS010406: Registered connection factory java:/JmsXA
+2015-01-29 13:34:55,936 INFO  [org.jboss.weld.deployer] (MSC service thread 1-7) JBAS016002: Processing weld deployment BankApp.war
+2015-01-29 13:34:55,980 INFO  [org.hornetq.ra] (MSC service thread 1-3) HornetQ resource adaptor started
+2015-01-29 13:34:55,981 INFO  [org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator] (MSC service thread 1-3) IJ020002: Deployed: file://RaActivatorhornetq-ra
+2015-01-29 13:34:55,982 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-4) JBAS010401: Bound JCA ConnectionFactory [java:/JmsXA]
+2015-01-29 13:34:55,982 INFO  [org.jboss.as.messaging] (MSC service thread 1-8) JBAS011601: Bound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-01-29 13:34:56,301 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-7) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-29 13:34:56,407 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named ClientFacade in deployment unit deployment "BankApp.war" are as follows:
+
+	java:global/BankApp/ClientFacade!dal.ClientFacade
+	java:app/BankApp/ClientFacade!dal.ClientFacade
+	java:module/ClientFacade!dal.ClientFacade
+	java:global/BankApp/ClientFacade
+	java:app/BankApp/ClientFacade
+	java:module/ClientFacade
+
+2015-01-29 13:34:56,407 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named AccountFacade in deployment unit deployment "BankApp.war" are as follows:
+
+	java:global/BankApp/AccountFacade!dal.AccountFacade
+	java:app/BankApp/AccountFacade!dal.AccountFacade
+	java:module/AccountFacade!dal.AccountFacade
+	java:global/BankApp/AccountFacade
+	java:app/BankApp/AccountFacade
+	java:module/AccountFacade
+
+2015-01-29 13:34:56,407 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-7) JNDI bindings for session bean named OperatorBean in deployment unit deployment "BankApp.war" are as follows:
+
+	java:global/BankApp/OperatorBean!service.OperatorBean
+	java:app/BankApp/OperatorBean!service.OperatorBean
+	java:module/OperatorBean!service.OperatorBean
+	java:global/BankApp/OperatorBean
+	java:app/BankApp/OperatorBean
+	java:module/OperatorBean
+
+2015-01-29 13:34:56,695 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016005: Starting Services for CDI deployment: BankApp.war
+2015-01-29 13:34:56,755 INFO  [org.jboss.weld.Version] (MSC service thread 1-8) WELD-000900: 2.2.6 (Final)
+2015-01-29 13:34:56,778 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) JBAS016008: Starting weld service for deployment BankApp.war
+2015-01-29 13:34:56,983 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 59) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'BankApp.war#BankApp'
+2015-01-29 13:34:57,091 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 59) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-01-29 13:34:57,505 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 59) HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2015-01-29 13:34:57,515 WARN  [org.hibernate.dialect.DerbyDialect] (ServerService Thread Pool -- 59) HHH000328: Unable to load/access derby driver class sysinfo to check versions : org.apache.derby.tools.sysinfo from [Module "org.hibernate:main" from local module loader @736e9adb (finder: local module finder @6d21714c (roots: C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\modules,C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\modules\system\layers\base))]
+2015-01-29 13:34:57,756 INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] (ServerService Thread Pool -- 59) HHH000397: Using ASTQueryTranslatorFactory
+2015-01-29 13:34:59,417 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017534: Registered web context: /BankApp
+2015-01-29 13:34:59,423 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "Auction.war")]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => ["jboss.persistenceunit.\"Auction.war#AuctionPU\".__FIRST_PHASE__ is missing [jboss.naming.context.java.jboss.datasources.DerbyDS]"]}
+2015-01-29 13:34:59,455 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "derbyclient.jar" (runtime-name : "derbyclient.jar")
+2015-01-29 13:34:59,456 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "BankApp.war" (runtime-name : "BankApp.war")
+2015-01-29 13:34:59,456 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 31) JBAS018559: Deployed "Auction.war" (runtime-name : "Auction.war")
+2015-01-29 13:34:59,457 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.jboss.datasources.DerbyDS (missing) dependents: [service jboss.persistenceunit."Auction.war#AuctionPU".__FIRST_PHASE__] 
+
+2015-01-29 13:34:59,643 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-01-29 13:34:59,643 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-01-29 13:34:59,644 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 22314ms - Started 435 of 495 services (2 services failed or missing dependencies, 113 services are lazy, passive or on-demand)
+2015-01-29 13:34:59,730 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) JBAS015877: Stopped deployment Auction.war (runtime-name: Auction.war) in 27ms
+2015-01-29 13:34:59,902 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "Auction.war" (runtime-name: "Auction.war")
+2015-01-29 13:34:59,903 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.persistenceunit."Auction.war#AuctionPU".__FIRST_PHASE__ (missing) dependents: [service jboss.deployment.unit."Auction.war".POST_MODULE] 
+
+2015-01-29 13:35:04,530 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found Auction.war in deployment directory. To trigger deployment create a file called Auction.war.dodeploy
+2015-01-29 13:35:26,917 INFO  [stdout] (default task-5) Bean constructed.
+2015-01-29 13:35:26,924 INFO  [stdout] (default task-5) Calling createClient()
+2015-01-29 13:35:27,152 INFO  [stdout] (default task-5) Returned from createClient()
+2015-01-29 13:36:38,243 INFO  [org.jboss.as.controller] (management-handler-thread - 1) JBAS014774: Service status report
+JBAS014776:    Newly corrected services:
+      service jboss.naming.context.java.jboss.datasources.DerbyDS (no longer required)
+      service jboss.persistenceunit."Auction.war#AuctionPU".__FIRST_PHASE__ (no longer required)
+
+2015-01-29 13:36:38,261 INFO  [org.jboss.as.messaging] (ServerService Thread Pool -- 62) JBAS011605: Unbound messaging object to jndi name java:jboss/exported/jms/RemoteConnectionFactory
+2015-01-29 13:36:38,266 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) JBAS017535: Unregistered web context: /BankApp
+2015-01-29 13:36:38,292 INFO  [org.jboss.as.messaging] (MSC service thread 1-6) JBAS011605: Unbound messaging object to jndi name java:jboss/DefaultJMSConnectionFactory
+2015-01-29 13:36:38,292 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+2015-01-29 13:36:38,293 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) JBAS017532: Host default-host stopping
+2015-01-29 13:36:38,293 INFO  [org.jboss.as.connector.deployment] (MSC service thread 1-1) JBAS010410: Unbound JCA ConnectionFactory [java:/JmsXA]
+2015-01-29 13:36:38,295 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 66) JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'BankApp.war#BankApp'
+2015-01-29 13:36:38,298 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) JBAS010418: Stopped Driver service with driver-name = h2
+2015-01-29 13:36:38,300 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) JBAS016009: Stopping weld service for deployment BankApp.war
+2015-01-29 13:36:38,316 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 66) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'BankApp.war#BankApp'
+2015-01-29 13:36:38,321 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010409: Unbound data source [java:jboss/datasources/Derby]
+2015-01-29 13:36:38,325 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) JBAS010418: Stopped Driver service with driver-name = derbyclient.jar
+2015-01-29 13:36:38,330 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) JBAS015877: Stopped deployment BankApp.war (runtime-name: BankApp.war) in 80ms
+2015-01-29 13:36:38,334 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment derbyclient.jar (runtime-name: derbyclient.jar) in 85ms
+2015-01-29 13:36:38,337 INFO  [org.hornetq.ra] (ServerService Thread Pool -- 67) HQ151003: HornetQ resource adaptor stopped
+2015-01-29 13:36:38,453 INFO  [org.hornetq.core.server] (ServerService Thread Pool -- 67) HQ221002: HornetQ Server version 2.4.5.FINAL (Wild Hornet, 124) [35e4bb28-a2cf-11e4-a6ca-2bc3136321bd] stopped
+2015-01-29 13:36:38,459 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017521: Undertow HTTP listener default suspending
+2015-01-29 13:36:38,460 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017520: Undertow HTTP listener default stopped, was bound to localhost/127.0.0.1:8080
+2015-01-29 13:36:38,462 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017506: Undertow 1.1.0.Final stopping
+2015-01-29 13:36:38,470 INFO  [org.jboss.as] (MSC service thread 1-4) JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 218ms

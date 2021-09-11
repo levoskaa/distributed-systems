@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:cache="http://www.springframework.org/schema/cache"  xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/data/jpa
+	    http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+	    http://www.springframework.org/schema/tx
+	    http://www.springframework.org/schema/tx/spring-tx.xsd
+	    http://www.springframework.org/schema/context 
+	    http://www.springframework.org/schema/context/spring-context.xsd    
+	    http://www.springframework.org/schema/cache 
+	    http://www.springframework.org/schema/cache/spring-cache.xsd
+	">
+
+	<jpa:repositories base-package="hu.bme.aut.erlabor.parceltracker.dao.parcel"
+		entity-manager-factory-ref="parcelEntityManagerFactory"
+		transaction-manager-ref="parcelTransactionManager" />
+
+	<jpa:repositories base-package="hu.bme.aut.erlabor.parceltracker.dao.event"
+		entity-manager-factory-ref="eventEntityManagerFactory"
+		transaction-manager-ref="eventTransactionManager" />
+
+	<context:component-scan base-package="hu.bme.aut.erlabor.parceltracker.service" />
+
+	<bean id="parcelEntityManagerFactory"
+		class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="parcelPU" />
+		<property name="persistenceProviderClass"
+			value="org.hibernate.jpa.HibernatePersistenceProvider" />
+	</bean>
+
+	<bean id="eventEntityManagerFactory"
+		class="org.springframework.orm.jpa.LocalEntityManagerFactoryBean">
+		<property name="persistenceUnitName" value="eventPU" />
+		<property name="persistenceProviderClass"
+			value="org.hibernate.jpa.HibernatePersistenceProvider" />
+	</bean>
+
+
+	<bean id="parcelTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="parcelEntityManagerFactory" />
+	</bean>
+
+	<bean id="eventTransactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+		<property name="entityManagerFactory" ref="eventEntityManagerFactory" />
+	</bean>
+
+	<bean
+		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+
+	<tx:annotation-driven />
+
+	<cache:annotation-driven />
+
+	<bean id="cacheManager"
+		class="org.infinispan.spring.provider.SpringEmbeddedCacheManagerFactoryBean"
+		p:configurationFileLocation="classpath:replicated-cache-config.xml" />
+		
+</beans>

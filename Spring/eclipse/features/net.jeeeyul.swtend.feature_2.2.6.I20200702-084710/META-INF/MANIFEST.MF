@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.10.7
+Created-By: 1.8.0_242-b08 (Eclipse OpenJ9)
+
+Name: feature.xml
+SHA-256-Digest: yH61iyBcizLIq1N1PmfrG8ULly5XDo3JUCQK/0jkKlk=
+

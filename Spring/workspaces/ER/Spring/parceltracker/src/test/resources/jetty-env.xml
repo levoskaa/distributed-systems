@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure id="Server" class="org.eclipse.jetty.webapp.WebAppContext">
+	<New id="parcelDB" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg>java:/jdbc/parcelDB</Arg>
+		<Arg>
+			<New class="org.apache.derby.jdbc.ClientDataSource">
+				<Set name="User">APP</Set>
+				<Set name="Password">APP</Set>
+				<Set name="DatabaseName">parcelDB</Set>
+				<Set name="ServerName">localhost</Set>
+				<Set name="PortNumber">1527</Set>
+			</New>
+		</Arg>
+	</New>
+	<New id="eventDB" class="org.eclipse.jetty.plus.jndi.Resource">
+		<Arg>java:/jdbc/eventDB</Arg>
+		<Arg>
+			<New class="org.apache.derby.jdbc.ClientDataSource">
+				<Set name="User">APP</Set>
+				<Set name="Password">APP</Set>
+				<Set name="DatabaseName">eventDB</Set>
+				<Set name="ServerName">localhost</Set>
+				<Set name="PortNumber">1527</Set>
+			</New>
+		</Arg>
+	</New>
+</Configure>

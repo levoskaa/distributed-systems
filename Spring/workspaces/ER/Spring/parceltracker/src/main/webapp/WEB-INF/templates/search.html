@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Parcel tracker</title>
+</head>
+<body>
+
+	<h2>Search for a parcel</h2>
+	<h4>By tracking number</h4>
+	<form action="search.html" th:action="@{/basicsearch}">
+		Tracking number: <input type="text" name="trackingNo"/> 
+		<br /> 
+		<input type="submit" value="OK" />
+	</form>
+	
+	<h4>By cities</h4>
+	<form action="search.html" th:action="@{/citysearch}">
+		Sender city: <input type="text" name="senderCity"/> 
+		<br /> 
+		Receiver city: <input type="text" name="receiverCity"/>
+		<br /> 
+		<input type="submit" value="OK" />
+	</form>
+	
+	<div th:if="${results}">
+		<h3>Found parcels</h3>
+		<div th:each="parcel: ${results}">
+			
+			<h4>Tracking number: <span th:text="${parcel.trackingNumber}">1234</span></h4>
+			<div>Sent from: <span th:text="${parcel.senderData}">Hungary, Budapest, Magyar tudósok körútja 2.</span></div>
+			<div>Sent to: <span th:text="${parcel.receiverData}">Hungary, Budapest, Magyar tudósok körútja 3.</span></div>
+			
+			<h5 th:if="${parcel.events}">Events</h5>
+			<div th:each="event: ${parcel.events}">
+				<span th:text="${event.dateTime}">2015-10-06 11:11:00</span>
+				<span th:text="${event.status}">Posted</span>
+			</div>				
+		</div>
+	</div>
+
+</body>
+</html>

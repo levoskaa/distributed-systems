@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: lib/required/classmate-0.5.4.jar,lib/required/common
+ s-collections-3.2.1.jar,lib/required/hibernate-jpa-2.0-api-1.0.1.Fina
+ l.jar,lib/required/jandex-1.0.3.Final.jar,lib/required/javassist-3.12
+ .1.GA.jar,lib/required/jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+ ,lib/tools/freemarker.jar,lib/required/slf4j-api-1.5.8.jar,lib/log4j-
+ 1.2.15.jar,lib/slf4j-log4j12-1.5.8.jar,.,lib/jpa/hibernate-entitymana
+ ger-4.0.0.Final.jar,lib/required/hibernate-commons-annotations-4.0.1.
+ Final.jar,lib/required/hibernate-core-4.0.0.Final.jar,lib/required/jb
+ oss-logging-3.1.0.CR2.jar,lib/tools/hibernate-tools-4.0.0-CR1.jar,lib
+ /required/commons-logging-1.1.1.jar
+Built-By: hudson
+Eclipse-BundleShape: dir
+Bundle-Localization: plugin
+Bundle-Name: Hibernate 4.0 libraries
+Created-By: Apache Maven 3.1.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.eclipse.ui;bundle-version="3.105.0",org.eclipse.co
+ re.runtime;bundle-version="3.9.0",org.hibernate.eclipse;bundle-versio
+ n="3.7.0",org.eclipse.datatools.connectivity;bundle-version="1.2.7",o
+ rg.hibernate.eclipse.console;bundle-version="3.7.0",org.eclipse.debug
+ .core;bundle-version="3.8.0",org.eclipse.core.variables;bundle-versio
+ n="3.2.600",org.eclipse.jdt.core;bundle-version="3.9.0",org.eclipse.u
+ i.views;bundle-version="3.6.100",org.jboss.tools.hibernate.spi;bundle
+ -version="3.8.0",org.jboss.tools.hibernate.dom4j;bundle-version="1.6.
+ 1",org.jboss.tools.hibernate.antlr;bundle-version="2.7.7",org.jboss.t
+ ools.hibernate.jtidy;bundle-version="8.0.0"
+Bundle-Vendor: JBoss by Red Hat
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-hibernate.git;path="plugins/org.jboss.tools.hibernate4_0";commit
+ Id=5d95fc1fa78daa6a94ecd5580c98db1712efabcf
+Build-Jdk: 1.7.0_67
+Bundle-Version: 4.0.0.Final-v20141016-1911-B82
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.jboss.tools.hibernate4_0;singleton:=true
+Archiver-Version: Plexus Archiver
+

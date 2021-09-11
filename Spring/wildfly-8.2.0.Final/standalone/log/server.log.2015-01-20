@@ -1,0 +1,539 @@
+2015-01-20 12:38:49,982 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-01-20 12:38:49,978 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-01-20 12:38:49,993 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-20 12:38:49,977 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-01-20 12:38:49,985 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-01-20 12:38:50,014 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-01-20 12:38:50,022 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-01-20 12:38:50,039 INFO  [org.jboss.as.security] (MSC service thread 1-8) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-20 12:38:50,054 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-20 12:38:50,056 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-20 12:38:50,078 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-7) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-20 12:38:50,158 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-01-20 12:38:50,163 INFO  [org.jboss.as.naming] (MSC service thread 1-3) JBAS011802: Starting Naming Service
+2015-01-20 12:38:50,193 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-20 12:38:50,258 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) JBAS010417: Started Driver service with driver-name = h2
+2015-01-20 12:38:50,288 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.6.Final
+2015-01-20 12:38:50,517 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final/welcome-content
+2015-01-20 12:38:50,595 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017525: Started server default-server.
+2015-01-20 12:38:50,603 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) JBAS017531: Host default-host starting
+2015-01-20 12:38:50,766 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015876: Starting deployment of "Auction.war" (runtime-name: "Auction.war")
+2015-01-20 12:38:50,766 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015876: Starting deployment of "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2015-01-20 12:38:50,775 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) JBAS015012: Started FileSystemDeploymentService for directory c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\deployments
+2015-01-20 12:38:50,881 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_cs.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,882 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_de_DE.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,882 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_es.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,882 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_fr.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,883 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_hu.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,883 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_it.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,883 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_ja_JP.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,883 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_ko_KR.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,883 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_pl.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,884 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_pt_BR.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,884 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_ru.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,884 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_zh_CN.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,885 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015960: Class Path entry derbyLocale_zh_TW.jar in /c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/bin/content/derbyclient.jar  does not point to a valid jar for a Class-Path reference.
+2015-01-20 12:38:50,945 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) JBAS011401: Read persistence.xml for AuctionPU
+2015-01-20 12:38:51,121 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-01-20 12:38:51,259 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-20 12:38:51,567 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-20 12:38:51,588 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) JBAS010403: Deploying JDBC-compliant driver class org.apache.derby.jdbc.ClientDriver (version 10.10)
+2015-01-20 12:38:51,600 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) JBAS010417: Started Driver service with driver-name = derbyclient.jar
+2015-01-20 12:38:51,620 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) JBAS010400: Bound data source [java:jboss/datasources/DerbyDS]
+2015-01-20 12:38:51,624 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'Auction.war#AuctionPU'
+2015-01-20 12:38:51,668 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 50) HHH000204: Processing PersistenceUnitInfo [
+	name: AuctionPU
+	...]
+2015-01-20 12:38:51,745 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 50) HHH000412: Hibernate Core {4.3.7.Final}
+2015-01-20 12:38:51,747 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000206: hibernate.properties not found
+2015-01-20 12:38:51,748 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 50) HHH000021: Bytecode provider name : javassist
+2015-01-20 12:38:51,914 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016002: Processing weld deployment Auction.war
+2015-01-20 12:38:52,178 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.1.3.Final
+2015-01-20 12:38:52,257 INFO  [org.jboss.as.ejb3.deployment.processors.EjbJndiBindingsDeploymentUnitProcessor] (MSC service thread 1-5) JNDI bindings for session bean named AuctionBean in deployment unit deployment "Auction.war" are as follows:
+
+	java:global/Auction/AuctionBean!auction.AuctionBean
+	java:app/Auction/AuctionBean!auction.AuctionBean
+	java:module/AuctionBean!auction.AuctionBean
+	java:global/Auction/AuctionBean
+	java:app/Auction/AuctionBean
+	java:module/AuctionBean
+
+2015-01-20 12:38:52,531 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016005: Starting Services for CDI deployment: Auction.war
+2015-01-20 12:38:52,604 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 2.2.6 (Final)
+2015-01-20 12:38:52,638 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) JBAS016008: Starting weld service for deployment Auction.war
+2015-01-20 12:38:52,793 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 50) JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'Auction.war#AuctionPU'
+2015-01-20 12:38:53,092 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 50) HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2015-01-20 12:38:54,211 WARN  [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (ServerService Thread Pool -- 50) IJ000604: Throwable while attempting to get a new connection: null: javax.resource.ResourceException: Could not create connection
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:347)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.getLocalManagedConnection(LocalManagedConnectionFactory.java:354)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createManagedConnection(LocalManagedConnectionFactory.java:288)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.createConnectionEventListener(SemaphoreArrayListManagedConnectionPool.java:1166)
+	at org.jboss.jca.core.connectionmanager.pool.mcp.SemaphoreArrayListManagedConnectionPool.getConnection(SemaphoreArrayListManagedConnectionPool.java:446)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getSimpleConnection(AbstractPool.java:461)
+	at org.jboss.jca.core.connectionmanager.pool.AbstractPool.getConnection(AbstractPool.java:433)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.getManagedConnection(AbstractConnectionManager.java:379)
+	at org.jboss.jca.core.connectionmanager.tx.TxConnectionManagerImpl.getManagedConnection(TxConnectionManagerImpl.java:421)
+	at org.jboss.jca.core.connectionmanager.AbstractConnectionManager.allocateConnection(AbstractConnectionManager.java:515)
+	at org.jboss.jca.adapters.jdbc.WrapperDataSource.getConnection(WrapperDataSource.java:146)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcServicesImpl.java:279) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:124) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1887) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.jboss.as.jpa.hibernate4.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44) [jipijapa-hibernate4-3-1.0.1.Final.jar:]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:154) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:474) [wildfly-security-manager-1.0.0.Final.jar:1.0.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:182) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122) [jboss-threads-2.1.1.Final.jar:2.1.1.Final]
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused: connect.
+	at org.apache.derby.client.am.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.jboss.jca.adapters.jdbc.local.LocalManagedConnectionFactory.createLocalManagedConnection(LocalManagedConnectionFactory.java:322)
+	... 32 more
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Error connecting to server localhost on port 1527 with message Connection refused: connect.
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.Connection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection40.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl40.newNetConnection(Unknown Source)
+	... 34 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) [rt.jar:1.8.0_25]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) [rt.jar:1.8.0_25]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) [rt.jar:1.8.0_25]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) [rt.jar:1.8.0_25]
+	at java.net.Socket.connect(Socket.java:589) [rt.jar:1.8.0_25]
+	at java.net.Socket.connect(Socket.java:538) [rt.jar:1.8.0_25]
+	at java.net.Socket.<init>(Socket.java:434) [rt.jar:1.8.0_25]
+	at java.net.Socket.<init>(Socket.java:211) [rt.jar:1.8.0_25]
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271) [rt.jar:1.8.0_25]
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	... 40 more
+
+2015-01-20 12:38:54,235 WARN  [org.hibernate.engine.jdbc.internal.JdbcServicesImpl] (ServerService Thread Pool -- 50) HHH000342: Could not obtain connection to query metadata : javax.resource.ResourceException: IJ000453: Unable to get managed connection for java:jboss/datasources/DerbyDS
+2015-01-20 12:38:54,236 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 50) MSC000001: Failed to start service jboss.persistenceunit."Auction.war#AuctionPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."Auction.war#AuctionPU": org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:172) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:117) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.security.AccessController.doPrivileged(Native Method) [rt.jar:1.8.0_25]
+	at org.wildfly.security.manager.WildFlySecurityManager.doChecked(WildFlySecurityManager.java:474)
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1.run(PersistenceUnitServiceImpl.java:182) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [rt.jar:1.8.0_25]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [rt.jar:1.8.0_25]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+	at org.jboss.threads.JBossThread.run(JBossThread.java:122)
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:104) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:71) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:205) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:111) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:234) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:206) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.cfg.Configuration.buildTypeRegistrations(Configuration.java:1887) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1845) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [hibernate-core-4.3.7.Final.jar:4.3.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [hibernate-entitymanager-4.3.7.Final.jar:4.3.7.Final]
+	at org.jboss.as.jpa.hibernate4.TwoPhaseBootstrapImpl.build(TwoPhaseBootstrapImpl.java:44) [jipijapa-hibernate4-3-1.0.1.Final.jar:]
+	at org.jboss.as.jpa.service.PersistenceUnitServiceImpl$1$1.run(PersistenceUnitServiceImpl.java:154) [wildfly-jpa-8.2.0.Final.jar:8.2.0.Final]
+	... 8 more
+
+2015-01-20 12:38:54,245 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "Auction.war")]) - failure description: {"JBAS014671: Failed services" => {"jboss.persistenceunit.\"Auction.war#AuctionPU\"" => "org.jboss.msc.service.StartException in service jboss.persistenceunit.\"Auction.war#AuctionPU\": org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+    Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set"}}
+2015-01-20 12:38:54,257 WARN  [org.jboss.as.jpa] (Controller Boot Thread) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'Auction.war#AuctionPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityCacheStatistics.getDynamicChildrenNames(HibernateEntityCacheStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.boot(ModelControllerImpl.java:346) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:297) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:331) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:259) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-01-20 12:38:54,260 WARN  [org.jboss.as.jpa] (Controller Boot Thread) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'Auction.war#AuctionPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateCollectionStatistics.getDynamicChildrenNames(HibernateCollectionStatistics.java:72)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.boot(ModelControllerImpl.java:346) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:297) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:331) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:259) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-01-20 12:38:54,262 WARN  [org.jboss.as.jpa] (Controller Boot Thread) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'Auction.war#AuctionPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateQueryCacheStatistics.getDynamicChildrenNames(HibernateQueryCacheStatistics.java:85)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.boot(ModelControllerImpl.java:346) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:297) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:331) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:259) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-01-20 12:38:54,264 WARN  [org.jboss.as.jpa] (Controller Boot Thread) JBAS011411: Unexpected problem gathering statistics: java.lang.IllegalStateException: JBAS011477: Persistence unit 'Auction.war#AuctionPU' is not available
+	at org.jboss.as.jpa.management.EntityManagerFactoryLookup.entityManagerFactory(EntityManagerFactoryLookup.java:44)
+	at org.jboss.as.jpa.hibernate4.management.HibernateEntityStatistics.getDynamicChildrenNames(HibernateEntityStatistics.java:145)
+	at org.jboss.as.jpa.management.DynamicManagementStatisticsResource.getChildren(DynamicManagementStatisticsResource.java:204)
+	at org.jboss.as.controller.registry.AbstractModelResource$DelegateResource.getChildren(AbstractModelResource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:252) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:254) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:239) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:225) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.registry.Resource$Tools.readModel(Resource.java:213) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.writeModel(ModelControllerImpl.java:580) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.OperationContextImpl.createPersistenceResource(OperationContextImpl.java:229) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:543) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.finishStep(AbstractOperationContext.java:752) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:727) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:501) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:298) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:293) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.ModelControllerImpl.boot(ModelControllerImpl.java:346) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:297) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:356) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.server.ServerService.boot(ServerService.java:331) [wildfly-server-8.2.0.Final.jar:8.2.0.Final]
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:259) [wildfly-controller-8.2.0.Final.jar:8.2.0.Final]
+	at java.lang.Thread.run(Thread.java:745) [rt.jar:1.8.0_25]
+
+2015-01-20 12:38:54,290 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS018559: Deployed "derbyclient.jar" (runtime-name : "derbyclient.jar")
+2015-01-20 12:38:54,291 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "Auction.war" (runtime-name : "Auction.war")
+2015-01-20 12:38:54,293 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."Auction.war#AuctionPU": org.jboss.msc.service.StartException in service jboss.persistenceunit."Auction.war#AuctionPU": org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+
+2015-01-20 12:38:54,447 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-01-20 12:38:54,447 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-01-20 12:38:54,447 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 10228ms - Started 309 of 395 services (26 services failed or missing dependencies, 100 services are lazy, passive or on-demand)
+2015-01-20 12:38:54,532 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) JBAS016009: Stopping weld service for deployment Auction.war
+2015-01-20 12:38:54,563 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 6) JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'Auction.war#AuctionPU'
+2015-01-20 12:38:54,564 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010409: Unbound data source [java:jboss/datasources/DerbyDS]
+2015-01-20 12:38:54,566 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010418: Stopped Driver service with driver-name = derbyclient.jar
+2015-01-20 12:38:54,567 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) JBAS015877: Stopped deployment Auction.war (runtime-name: Auction.war) in 45ms
+2015-01-20 12:38:54,574 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) JBAS015877: Stopped deployment derbyclient.jar (runtime-name: derbyclient.jar) in 50ms
+2015-01-20 12:38:54,798 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) JBAS014901: Content removed from location c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\content\e9\561ac9ad88d57a4233cf6ed12ec898d8887ac4\content
+2015-01-20 12:38:54,799 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "derbyclient.jar" (runtime-name: "derbyclient.jar")
+2015-01-20 12:38:54,799 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "Auction.war" (runtime-name: "Auction.war")
+2015-01-20 12:38:54,803 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."Auction.war".WeldBootstrapService (missing) dependents: [service jboss.deployment.unit."Auction.war".WeldStartService, service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./Auction, JBAS014799: ... and 10 more ] 
+      service jboss.deployment.unit."Auction.war".WeldStartService (missing) dependents: [service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldInitialListener".WeldInstantiator, service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".WeldInstantiator, service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, JBAS014799: ... and 8 more ] 
+      service jboss.deployment.unit."Auction.war".component.AuctionBean.CREATE (missing) dependents: [service jboss.deployment.unit."Auction.war".component.AuctionBean.START] 
+      service jboss.deployment.unit."Auction.war".component.AuctionBean.START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".moduleDeploymentRuntimeInformationStart, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component.AuctionBean.VIEW."auction.AuctionBean".LOCAL (missing) dependents: [service jboss.deployment.unit."Auction.war".component.AuctionBean.START] 
+      service jboss.deployment.unit."Auction.war".component.AuctionBean.WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component.AuctionBean.START] 
+      service jboss.deployment.unit."Auction.war".component.AuctionBean.ejb.non-functional-timerservice (missing) dependents: [service jboss.deployment.unit."Auction.war".component.AuctionBean.START] 
+      service jboss.deployment.unit."Auction.war".component."com.sun.faces.config.ConfigureListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."com.sun.faces.config.ConfigureListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".CREATE (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".CREATE (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.PermittedTaglibsTLV".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".CREATE (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.servlet.jsp.jstl.tlv.ScriptFreeTLV".START] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldInitialListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldInitialListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService, service jboss.deployment.unit."Auction.war".deploymentCompleteService] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".CREATE (missing) dependents: [service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".JndiBindingsService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".START (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction, service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".WeldInstantiator (missing) dependents: [service jboss.deployment.unit."Auction.war".component."org.jboss.weld.servlet.WeldTerminalListener".START] 
+      service jboss.deployment.unit."Auction.war".ee.ComponentRegistry (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService] 
+      service jboss.deployment.unit."Auction.war".moduleDeploymentRuntimeInformation (missing) dependents: [service jboss.deployment.unit."Auction.war".component.AuctionBean.START, service jboss.deployment.unit."Auction.war".moduleDeploymentRuntimeInformationStart] 
+      service jboss.jdbc-driver.derbyclient_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/DerbyDS, service jboss.data-source.java:jboss/datasources/DerbyDS] 
+      service jboss.naming.context.java.app.Auction.env (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.BeanManager (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.DefaultContextService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.DefaultDataSource (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.DefaultManagedExecutorService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.DefaultManagedScheduledExecutorService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.DefaultManagedThreadFactory (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.EJBContext (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.TimerService (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.TransactionSynchronizationRegistry (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.UserTransaction (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.env (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService] 
+      service jboss.naming.context.java.module.Auction.Auction.env."auction.AuctionBean".em (missing) dependents: [service jboss.deployment.unit."Auction.war".jndiDependencyService, service jboss.deployment.unit."Auction.war".component.AuctionBean.START] 
+      service jboss.persistenceunit."Auction.war#AuctionPU" (missing) dependents: [service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacetTag".START, service jboss.deployment.unit."Auction.war".WeldStartService, service jboss.deployment.unit."Auction.war".component."javax.faces.webapp.FacesServlet".START, service jboss.deployment.unit."Auction.war".component."com.sun.faces.config.ConfigureListener".START, JBAS014799: ... and 8 more ] 
+      service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction] 
+      service jboss.undertow.deployment.default-server.default-host./Auction.codec (missing) dependents: [service jboss.undertow.deployment.default-server.default-host./Auction.UndertowDeploymentInfoService] 
+JBAS014777:   Services which failed to start:      service jboss.persistenceunit."Auction.war#AuctionPU"
+
+2015-01-20 12:39:43,589 INFO  [org.jboss.modules] (main) JBoss Modules version 1.3.3.Final
+2015-01-20 12:39:43,774 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.2.Final
+2015-01-20 12:39:43,836 INFO  [org.jboss.as] (MSC service thread 1-5) JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+2015-01-20 12:39:43,841 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1250
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Java\jdk1.8.0_25\jre\lib\endorsed
+	java.ext.dirs = C:\Java\jdk1.8.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+	java.home = C:\Java\jdk1.8.0_25\jre
+	java.io.tmpdir = C:\Users\gabor.AUT\AppData\Local\Temp\
+	java.library.path = C:\Java\jdk1.8.0_25\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;native;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;c:\apache-maven-3.1.0\bin;C:\Program Files\SlikSvn\bin\;C:\PROGRA~1\IBM\SQLLIB\BIN;C:\PROGRA~1\IBM\SQLLIB\FUNCTION;C:\PROGRA~1\IBM\SQLLIB\SAMPLES\REPL;C:\Program Files\TortoiseSVN\bin;C:\Program Files\MATLAB\R2009a\bin;C:\Program Files\MATLAB\R2009a\bin\win64;C:\Program Files\TortoiseHg\;C:\Program Files\ActivIdentity\ActivClient\;C:\Program Files (x86)\ActivIdentity\ActivClient\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;c:\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\OpenVPN\bin;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b18
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final
+	jboss.host.name = timon
+	jboss.modules.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = timon
+	jboss.qualified.host.name = timon
+	jboss.server.base.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone
+	jboss.server.config.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\configuration
+	jboss.server.data.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data
+	jboss.server.deploy.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\data\content
+	jboss.server.log.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\log
+	jboss.server.name = timon
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/configuration/logging.properties
+	module.path = c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/modules
+	org.jboss.boot.log.file = c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 7
+	os.version = 6.1
+	path.separator = ;
+	program.name = JBossTools: WildFly 8.2.0-Final
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Java\jdk1.8.0_25\jre\lib\resources.jar;C:\Java\jdk1.8.0_25\jre\lib\rt.jar;C:\Java\jdk1.8.0_25\jre\lib\sunrsasign.jar;C:\Java\jdk1.8.0_25\jre\lib\jsse.jar;C:\Java\jdk1.8.0_25\jre\lib\jce.jar;C:\Java\jdk1.8.0_25\jre\lib\charsets.jar;C:\Java\jdk1.8.0_25\jre\lib\jfr.jar;C:\Java\jdk1.8.0_25\jre\classes
+	sun.boot.library.path = C:\Java\jdk1.8.0_25\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/modules -jaxpmodule javax.xml.jaxp-provider org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1250
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = Service Pack 1
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.dir = c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\bin
+	user.home = C:\Users\gabor.AUT
+	user.language = en
+	user.name = gabor
+	user.script = 
+	user.timezone = Europe/Prague
+	user.variant = 
+2015-01-20 12:39:43,842 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -Dprogram.name=JBossTools: WildFly 8.2.0-Final -Xms64m -Xmx512m -XX:MaxPermSize=256m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=c:/Oktatas/J2EE/SWfejlesztesJ2EEplatformon/UjLaborok/javaee/wildfly-8.2.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1250 
+2015-01-20 12:39:45,319 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015014: Re-attempting failed deployment Auction.war
+2015-01-20 12:39:45,328 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) JBAS015003: Found Auction.war in deployment directory. To trigger deployment create a file called Auction.war.dodeploy
+2015-01-20 12:39:45,343 INFO  [org.jboss.as.server] (Controller Boot Thread) JBAS015888: Creating http management service using socket-binding (management-http)
+2015-01-20 12:39:45,360 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.3.0.Final
+2015-01-20 12:39:45,368 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.3.0.Final
+2015-01-20 12:39:45,392 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 45) JBAS013171: Activating Security Subsystem
+2015-01-20 12:39:45,398 INFO  [org.jboss.as.security] (MSC service thread 1-6) JBAS013170: Current PicketBox version=4.0.21.Final
+2015-01-20 12:39:45,433 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 48) JBAS015537: Activating WebServices Extension
+2015-01-20 12:39:45,473 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 46) JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+2015-01-20 12:39:45,489 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 32) JBAS010280: Activating Infinispan subsystem.
+2015-01-20 12:39:45,492 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 40) JBAS011800: Activating Naming Subsystem
+2015-01-20 12:39:45,493 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 31) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-01-20 12:39:45,494 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 38) JBAS012615: Activated the following JSF Implementations: [main]
+2015-01-20 12:39:45,555 INFO  [org.jboss.as.connector.logging] (MSC service thread 1-3) JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+2015-01-20 12:39:45,568 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-20 12:39:45,574 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) JBAS017502: Undertow 1.1.0.Final starting
+2015-01-20 12:39:45,617 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 27) JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2015-01-20 12:39:45,621 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) JBAS010417: Started Driver service with driver-name = h2
+2015-01-20 12:39:45,692 INFO  [org.jboss.as.naming] (MSC service thread 1-2) JBAS011802: Starting Naming Service
+2015-01-20 12:39:45,693 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) JBAS015400: Bound mail session [java:jboss/mail/Default]
+2015-01-20 12:39:45,908 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 47) JBAS017527: Creating file handler for path c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final/welcome-content
+2015-01-20 12:39:45,966 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 4.0.6.Final
+2015-01-20 12:39:46,087 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017525: Started server default-server.
+2015-01-20 12:39:46,096 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) JBAS017531: Host default-host starting
+2015-01-20 12:39:46,130 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) JBAS017519: Undertow HTTP listener default listening on localhost/127.0.0.1:8080
+2015-01-20 12:39:46,322 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) JBAS015012: Started FileSystemDeploymentService for directory c:\Oktatas\J2EE\SWfejlesztesJ2EEplatformon\UjLaborok\javaee\wildfly-8.2.0.Final\standalone\deployments
+2015-01-20 12:39:46,345 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) JBAS015876: Starting deployment of "Auction.war" (runtime-name: "Auction.war")
+2015-01-20 12:39:46,416 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+2015-01-20 12:39:46,425 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+2015-01-20 12:39:46,498 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) JBAS011401: Read persistence.xml for AuctionPU
+2015-01-20 12:39:46,553 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("deploy") failed - address: ([("deployment" => "Auction.war")]) - failure description: {"JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+    "Services that were unable to start:" => [
+        "jboss.deployment.unit.\"Auction.war\".POST_MODULE",
+        "jboss.persistenceunit.\"Auction.war#AuctionPU\".__FIRST_PHASE__"
+    ],
+    "Services that may be the cause:" => ["jboss.jdbc-driver.derbyclient_jar"]
+}}
+2015-01-20 12:39:46,554 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "DerbyDS")
+]) - failure description: {"JBAS014771: Services with missing/unavailable dependencies" => [
+    "jboss.driver-demander.java:jboss/datasources/DerbyDS is missing [jboss.jdbc-driver.derbyclient_jar]",
+    "jboss.data-source.java:jboss/datasources/DerbyDS is missing [jboss.jdbc-driver.derbyclient_jar]"
+]}
+2015-01-20 12:39:46,555 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) JBAS014613: Operation ("add") failed - address: ([
+    ("subsystem" => "datasources"),
+    ("data-source" => "DerbyDS")
+]) - failure description: {
+    "JBAS014771: Services with missing/unavailable dependencies" => [
+        "jboss.driver-demander.java:jboss/datasources/DerbyDS is missing [jboss.jdbc-driver.derbyclient_jar]",
+        "jboss.data-source.java:jboss/datasources/DerbyDS is missing [jboss.jdbc-driver.derbyclient_jar]"
+    ],
+    "JBAS014879: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.data-source.reference-factory.DerbyDS",
+            "jboss.naming.context.java.jboss.datasources.DerbyDS"
+        ],
+        "Services that may be the cause:" => ["jboss.jdbc-driver.derbyclient_jar"]
+    }
+}
+2015-01-20 12:39:46,639 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 28) JBAS018559: Deployed "Auction.war" (runtime-name : "Auction.war")
+2015-01-20 12:39:46,640 INFO  [org.jboss.as.controller] (Controller Boot Thread) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.jdbc-driver.derbyclient_jar (missing) dependents: [service jboss.driver-demander.java:jboss/datasources/DerbyDS, service jboss.data-source.java:jboss/datasources/DerbyDS] 
+
+2015-01-20 12:39:46,897 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) JBAS015877: Stopped deployment Auction.war (runtime-name: Auction.war) in 3ms
+2015-01-20 12:39:46,921 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+2015-01-20 12:39:46,921 INFO  [org.jboss.as] (Controller Boot Thread) JBAS015951: Admin console listening on http://127.0.0.1:9990
+2015-01-20 12:39:46,921 ERROR [org.jboss.as] (Controller Boot Thread) JBAS015875: WildFly 8.2.0.Final "Tweek" started (with errors) in 3569ms - Started 185 of 239 services (4 services failed or missing dependencies, 82 services are lazy, passive or on-demand)
+2015-01-20 12:39:47,096 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) JBAS018558: Undeployed "Auction.war" (runtime-name: "Auction.war")
+2015-01-20 12:39:47,097 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) JBAS014774: Service status report
+JBAS014775:    New missing/unsatisfied dependencies:
+      service jboss.persistenceunit."Auction.war#AuctionPU".__FIRST_PHASE__ (missing) dependents: [service jboss.deployment.unit."Auction.war".POST_MODULE] 
+
+2015-01-20 12:39:51,692 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) JBAS015003: Found Auction.war in deployment directory. To trigger deployment create a file called Auction.war.dodeploy

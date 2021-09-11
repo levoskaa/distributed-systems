@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (c) Red Hat, Inc., contributors and others 2004 - 2014. All rights reserved
+
+    Licensed under the Eclipse Public License version 1.0, available at
+    http://www.eclipse.org/legal/epl-v10.html
+
+-->
+<feature
+      id="org.jboss.tools.forge.feature"
+      label="%featureName"
+      version="1.3.1.Final-v20141209-0343-B80"
+      provider-name="%featureProvider"
+      plugin="org.jboss.tools.forge.ui">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.jboss.tools.forge.m2e.feature"
+         version="1.1.1.Final-v20141209-0343-B80"/>
+
+   <plugin
+         id="org.jboss.tools.forge.ui"
+         download-size="293"
+         install-size="596"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.forge.runtime"
+         download-size="29346"
+         install-size="32447"
+         version="1.4.144.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.forge.core"
+         download-size="61"
+         install-size="113"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.forge.runtime.ext"
+         download-size="15"
+         install-size="21"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.forge.ui.notifications"
+         download-size="26"
+         install-size="36"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.aesh.core"
+         download-size="33"
+         install-size="50"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.aesh.runtime"
+         download-size="332"
+         install-size="370"
+         version="1.3.53.Final-v20141209-0343-B80"/>
+
+   <plugin
+         id="org.jboss.tools.aesh.ui"
+         download-size="23"
+         install-size="35"
+         version="1.3.1.Final-v20141209-0343-B80"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.forge2.runtime"
+         download-size="51177"
+         install-size="56902"
+         version="2.12.3.Final-v20141209-0343-B80"/>
+
+</feature>

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Export-Package: org.jboss.tools.vpe.html.template
+Bundle-ActivationPolicy: lazy
+Built-By: hudson
+Eclipse-BundleShape: dir
+Bundle-Name: %pluginName
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.1.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",org.eclipse.core
+ .runtime;bundle-version="3.7.0",org.jboss.tools.vpe,org.mozilla.xpcom
+ ,org.jboss.tools.jst.web.ui,org.jboss.tools.common,org.eclipse.jface.
+ text;bundle-version="3.7.0",org.jboss.tools.vpe.xulrunner
+Bundle-Vendor: %providerName
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-vpe.git;path="plugins/org.jboss.tools.vpe.html";commitId=006f036
+ 7b8a34f9e1e0699d25f90fa829bb02a1a
+Bundle-Version: 3.6.1.Final-v20141209-0344-B84
+Build-Jdk: 1.6.0_45
+Bundle-Activator: org.jboss.tools.vpe.html.HtmlTemplatePlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.jboss.tools.vpe.html;singleton:=true
+Archiver-Version: Plexus Archiver
+

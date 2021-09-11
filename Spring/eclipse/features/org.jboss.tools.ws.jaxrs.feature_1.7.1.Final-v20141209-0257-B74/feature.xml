@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.jboss.tools.ws.jaxrs.feature"
+      label="%featureName"
+      version="1.7.1.Final-v20141209-0257-B74"
+      provider-name="JBoss by Red Hat">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <plugin
+         id="org.jboss.tools.ws.jaxrs.core"
+         download-size="282"
+         install-size="692"
+         version="1.7.1.Final-v20141209-0257-B74"
+         unpack="false"/>
+
+   <plugin
+         id="org.jboss.tools.ws.jaxrs.ui"
+         download-size="249"
+         install-size="530"
+         version="1.7.1.Final-v20141209-0257-B74"
+         unpack="false"/>
+
+</feature>

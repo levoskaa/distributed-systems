@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Export-Package: bootpath,org.jboss.forge.addon.convert,org.jboss.forge
+ .addon.convert.exception,org.jboss.forge.addon.database.tools.connect
+ ions,org.jboss.forge.addon.dependencies;uses:="org.jboss.forge.furnac
+ e.util,org.jboss.forge.addon.resource",org.jboss.forge.addon.facets,o
+ rg.jboss.forge.addon.projects; uses:="org.jboss.forge.furnace.spi,  o
+ rg.jboss.forge.addon.facets,  org.jboss.forge.furnace.util,  org.jbos
+ s.forge.addon.resource",org.jboss.forge.addon.projects.facets; uses:=
+ "org.jboss.forge.addon.projects.building,  org.jboss.forge.addon.proj
+ ects,  org.jboss.forge.addon.dependencies,  org.jboss.forge.addon.res
+ ource",org.jboss.forge.addon.resource;uses:="org.jboss.forge.addon.re
+ source.events,org.jboss.forge.addon.facets",org.jboss.forge.addon.she
+ ll.spi,org.jboss.forge.addon.shell.spi.command,org.jboss.forge.addon.
+ ui; uses:="org.jboss.forge.addon.ui.metadata,  org.jboss.forge.addon.
+ ui.context,  org.jboss.forge.addon.ui.result,  org.jboss.forge.addon.
+ ui.util",org.jboss.forge.addon.ui.command,org.jboss.forge.addon.ui.co
+ ntext;uses:="org.jboss.forge.addon.ui.input",org.jboss.forge.addon.ui
+ .controller,org.jboss.forge.addon.ui.facets;uses:="org.jboss.forge.ad
+ don.ui.hints,org.jboss.forge.addon.facets",org.jboss.forge.addon.ui.h
+ ints;uses:="org.jboss.forge.addon.environment",org.jboss.forge.addon.
+ ui.input;uses:="org.jboss.forge.addon.convert,org.jboss.forge.addon.u
+ i.context,org.jboss.forge.addon.facets",org.jboss.forge.addon.ui.meta
+ data;uses:="org.jboss.forge.addon.ui.hints",org.jboss.forge.addon.ui.
+ output,org.jboss.forge.addon.ui.progress,org.jboss.forge.addon.ui.res
+ ult,org.jboss.forge.addon.ui.util; uses:="org.jboss.forge.addon.ui.in
+ put,  org.jboss.forge.addon.ui.metadata,  org.jboss.forge.addon.conve
+ rt,  org.jboss.forge.addon.ui.hints,  org.jboss.forge.addon.ui.contex
+ t",org.jboss.forge.addon.ui.validate,org.jboss.forge.addon.ui.wizard;
+ uses:="org.jboss.forge.addon.ui.context,org.jboss.forge.addon.ui.resu
+ lt,org.jboss.forge.addon.ui",org.jboss.forge.furnace; uses:="org.jbos
+ s.forge.furnace.versions,  org.jboss.forge.furnace.addons,  org.jboss
+ .forge.furnace.spi,  org.jboss.forge.furnace.lock,  org.jboss.forge.f
+ urnace.repositories",org.jboss.forge.furnace.addons;uses:="org.jboss.
+ forge.furnace.versions,org.jboss.forge.furnace.services,org.jboss.for
+ ge.furnace.repositories",org.jboss.forge.furnace.event,org.jboss.forg
+ e.furnace.exception,org.jboss.forge.furnace.lock,org.jboss.forge.furn
+ ace.proxy;uses:="javassist.util.proxy,new org.jboss.forge.furnace.pro
+ xy",org.jboss.forge.furnace.repositories;uses:="org.jboss.forge.furna
+ ce.addons,org.jboss.forge.furnace.versions",org.jboss.forge.furnace.s
+ e;uses:="org.jboss.forge.furnace",org.jboss.forge.furnace.services,or
+ g.jboss.forge.furnace.spi;uses:="org.jboss.forge.furnace",org.jboss.f
+ orge.furnace.util;uses:="org.jboss.forge.furnace.addons",org.jboss.fo
+ rge.furnace.versions;uses:="org.jboss.forge.furnace.exception"
+Bundle-ClassPath: lib/furnace-proxy-2.12.3.Final.jar,lib/forge-javassi
+ st-2.jar,lib/furnace-api-2.12.3.Final.jar,lib/furnace-se-2.12.3.Final
+ .jar,lib/ui-api-2.12.3.Final.jar,lib/convert-api-2.12.3.Final.jar,lib
+ /ui-spi-2.12.3.Final.jar,lib/facets-api-2.12.3.Final.jar,lib/resource
+ s-api-2.12.3.Final.jar,lib/projects-api-2.12.3.Final.jar,lib/dependen
+ cies-api-2.12.3.Final.jar,lib/shell-spi-2.12.3.Final.jar,lib/database
+ -tools-api-2.12.3.Final.jar,.
+Built-By: hudson
+Eclipse-BundleShape: dir
+Bundle-Localization: plugin
+Bundle-Name: %BundleName
+Created-By: Apache Maven 3.1.1
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Vendor: %BundleProvider
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosst
+ ools-forge.git;path="plugins/org.jboss.tools.forge2.runtime";commitId
+ =9358af9f2e588ab8cf3f5c337b6610f8c49a0652
+Build-Jdk: 1.7.0_67
+Bundle-Version: 2.12.3.Final-v20141209-0343-B80
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.jboss.tools.forge2.runtime;singleton:=true
+Archiver-Version: Plexus Archiver
+
