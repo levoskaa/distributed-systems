@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebAPI.Data;
+using WebAPI.Interfaces;
+using WebAPI.Services;
 
 namespace WebAPI
 {
@@ -22,7 +24,11 @@ namespace WebAPI
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
+            // DB context
             services.AddDbContext<HEMDbContext>(opt => opt.UseInMemoryDatabase("HEMDb"));
+
+            // Services
+            services.AddScoped<IQuestionFormService, QuestionFormService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
