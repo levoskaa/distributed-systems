@@ -19,16 +19,38 @@ namespace WebAPI
 
         public IConfiguration Configuration { get; }
 
+        readonly string HemAllowSpecificOrigins = "_HemAllowSpecificOrigins";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            // Configure the JSON serializer to convert enum values as string
+            services.AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddJsonOptions(options =>
+                {
+                    options.SerializerSettings.Converters.Add(new Newtonsoft.Json.Converters.StringEnumConverter());
+                    options.SerializerSettings.NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore;
+                });
 
             // DB context
             services.AddDbContext<HEMDbContext>(opt => opt.UseInMemoryDatabase("HEMDb"));
 
             // Services
             services.AddScoped<IQuestionFormService, QuestionFormService>();
+
+            // Disable CORS, so we can test our application from Swagger editor online
+            services.AddCors(options =>
+            {
+                options.AddPolicy(HemAllowSpecificOrigins,
+                builder =>
+                {
+                    builder
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +60,8 @@ namespace WebAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(HemAllowSpecificOrigins);
 
             app.UseMvc();
         }
