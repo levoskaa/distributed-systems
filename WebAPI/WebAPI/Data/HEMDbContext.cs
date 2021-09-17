@@ -13,6 +13,9 @@ namespace WebAPI.Data
         public DbSet<MultipleChoiceQuestion> MultipleChoiceQuestions { get; set; }
         public DbSet<TrueOrFalseQuestion> TrueOrFalseQuestions { get; set; }
 
+        public DbSet<QuestionFormAnswer> QuestionFormAnswers { get; set; }
+        public DbSet<Answer> Answers { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Question>().ToTable("Questions");

@@ -1,0 +1,59 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using WebAPI.DTOs;
+using WebAPI.Interfaces;
+using WebAPI.Models;
+using WebAPI.Services;
+
+namespace WebAPI.Controllers
+{
+    [Route("api/question-form-answer")]
+    [ApiController]
+    public class QuestionFormAnswerController : ControllerBase
+    {
+        private readonly IQuestionFormAnswerService _service;
+
+        public QuestionFormAnswerController(IQuestionFormAnswerService service)
+        {
+            this._service = service;
+        }
+
+        // Find one question form answer by id
+        [HttpGet("{id}")]
+        public ActionResult<QuestionFormAnswerDTO> GetQuestionFormAnswer(long id)
+        {
+            var result = _service.GetQuestionFormAnswer(id);
+            if (result == null)
+            {
+                return NotFound();
+            }
+            return Ok(new QuestionFormAnswerDTO(result));
+        }
+
+        // Create a new question form answer
+        [HttpPost]
+        public ActionResult<QuestionFormAnswerDTO> CreateNewQuestionFormAnswer(QuestionFormAnswerDTO questionFormAnswerDTO)
+        {
+            // Handle error if no data is sent.
+            if (questionFormAnswerDTO == null)
+            {
+                return BadRequest("QuestionFormAnswer data must be set!");
+            }
+            try
+            {
+                // Map the DTO to entity and save the entity
+                QuestionFormAnswer createdEntity = _service.SaveQuestionFormAnswer(questionFormAnswerDTO.ToEntity());
+                // According to the conventions, we have to return a HTTP 201 created repsonse, with
+                // field "Location" in the header pointing to the created object
+                return CreatedAtAction(
+                    nameof(GetQuestionFormAnswer),
+                    new { id = createdEntity.Id },
+                    new QuestionFormAnswerDTO(createdEntity)
+                    );
+            }
+            catch (QuestionFormAnswerExistsException)
+            {
+                return Conflict("The desired ID for the QuestionFormAnswer is already taken!");
+            }
+        }
+    }
+}
