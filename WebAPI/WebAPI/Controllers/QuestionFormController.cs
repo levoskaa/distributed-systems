@@ -81,7 +81,7 @@ namespace WebAPI.Controllers
                 // According to the conventions, we have to return HTTP 204 No Content.
                 return NoContent();
             }
-            catch (QuestionFormDoesntExistsException)
+            catch (QuestionFormDoesntExistException)
             {
                 // Handle error if the question form to update doesn't exists.
                 return BadRequest("No QuestionForm exists with the given ID!");

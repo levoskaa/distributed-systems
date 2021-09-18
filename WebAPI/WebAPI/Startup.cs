@@ -38,6 +38,7 @@ namespace WebAPI
 
             // Services
             services.AddScoped<IQuestionFormService, QuestionFormService>();
+            services.AddScoped<IQuestionFormAnswerService, QuestionFormAnswerService>();
 
             // Disable CORS, so we can test our application from Swagger editor online
             services.AddCors(options =>

@@ -37,7 +37,7 @@ namespace WebAPI.Services
             // If there are no question form with the id throw an expcetion
             if (!QuestionFormExistsById(id))
             {
-                throw new QuestionFormDoesntExistsException();
+                throw new QuestionFormDoesntExistException();
             }
             var existing = _context
                 .QuestionForms

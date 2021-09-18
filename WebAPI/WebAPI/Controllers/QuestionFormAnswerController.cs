@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 using WebAPI.DTOs;
 using WebAPI.Interfaces;
 using WebAPI.Models;
@@ -15,6 +17,13 @@ namespace WebAPI.Controllers
         public QuestionFormAnswerController(IQuestionFormAnswerService service)
         {
             this._service = service;
+        }
+
+        // Fetch all question form answers
+        [HttpGet]
+        public ActionResult<IEnumerable<QuestionFormAnswerDTO>> GetQuestionForms()
+        {
+            return Ok(_service.GetQuestionFormAnswers().Select(qfa => new QuestionFormAnswerDTO(qfa)));
         }
 
         // Find one question form answer by id
@@ -50,9 +59,13 @@ namespace WebAPI.Controllers
                     new QuestionFormAnswerDTO(createdEntity)
                     );
             }
-            catch (QuestionFormAnswerExistsException)
+            catch (QuestionFormDoesntExistException)
             {
-                return Conflict("The desired ID for the QuestionFormAnswer is already taken!");
+                return BadRequest("No QuestionForm exists with the given ID!");
+            }
+            catch (AnsweredQuestionNotInQuestionFormException)
+            {
+                return BadRequest("Answer given for a Question that is not part of the QuestionForm!");
             }
         }
     }

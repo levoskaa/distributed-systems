@@ -4,7 +4,6 @@ namespace WebAPI.DTOs
 {
     public class AnswerDTO
     {
-        public long Id { get; set; }
         public long QuestionId { get; set; }
         public string AnswerText { get; set; }
 
@@ -13,7 +12,6 @@ namespace WebAPI.DTOs
 
         public AnswerDTO(Answer answer)
         {
-            this.Id = answer.Id;
             this.QuestionId = answer.QuestionId;
             this.AnswerText = answer.AnswerText;
         }
@@ -22,7 +20,6 @@ namespace WebAPI.DTOs
         {
             return new Answer
             {
-                Id = this.Id,
                 QuestionId = this.QuestionId,
                 AnswerText = this.AnswerText
             };

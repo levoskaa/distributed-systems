@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Linq;
 using WebAPI.Data;
 using WebAPI.Interfaces;
@@ -9,10 +10,39 @@ namespace WebAPI.Services
     public class QuestionFormAnswerService : IQuestionFormAnswerService
     {
         private readonly HEMDbContext _context;
+        private readonly IQuestionFormService _questionFormService;
 
-        public QuestionFormAnswerService(HEMDbContext context)
+        public QuestionFormAnswerService(HEMDbContext context, IQuestionFormService questionFormService)
         {
             this._context = context;
+            this._questionFormService = questionFormService;
+        }
+
+        public QuestionFormAnswer SaveQuestionFormAnswer(QuestionFormAnswer questionFormAnswer)
+        {
+            if (!_questionFormService.QuestionFormExistsById(questionFormAnswer.QuestionFormId))
+            {
+                throw new QuestionFormDoesntExistException();
+            }
+            var questionForm = _questionFormService.GetQuestionForm(questionFormAnswer.QuestionFormId);
+            var answeredQuestionNotInQuestionForm = questionFormAnswer.Answers.Any(answer => questionForm.Questions.All(question => answer.QuestionId != question.Id));
+            if (answeredQuestionNotInQuestionForm)
+            {
+                throw new AnsweredQuestionNotInQuestionFormException();
+            }
+            // Register the new question form answer as an entity tracekd by EF
+            var result = _context.QuestionFormAnswers.Add(questionFormAnswer);
+            // Save to database
+            _context.SaveChanges();
+            return result.Entity;
+        }
+
+        public IEnumerable<QuestionFormAnswer> GetQuestionFormAnswers()
+        {
+            return _context
+                .QuestionFormAnswers
+                .Include(qfa => qfa.Answers)
+                .ToList();
         }
 
         public QuestionFormAnswer GetQuestionFormAnswer(long id)
@@ -21,20 +51,6 @@ namespace WebAPI.Services
                 .QuestionFormAnswers
                 .Include(qfa => qfa.Answers)
                 .SingleOrDefault(qfa => qfa.Id == id);
-        }
-
-        public QuestionFormAnswer SaveQuestionFormAnswer(QuestionFormAnswer questionFormAnswer)
-        {
-            // If there is already a question form answer with this Id, throw an exception
-            if (QuestionFormAnswerExistsById(questionFormAnswer.Id))
-            {
-                throw new QuestionFormAnswerExistsException();
-            }
-            // Register the new question form answer as an entity tracekd by EF
-            var result = _context.QuestionFormAnswers.Add(questionFormAnswer);
-            // Save to database
-            _context.SaveChanges();
-            return result.Entity;
         }
 
         public bool QuestionFormAnswerExistsById(long id)
