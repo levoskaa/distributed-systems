@@ -54,3 +54,14 @@ a:hover {
 	padding: 4px;
 	border: 1px solid #aaa;
 }
+
+div.button-wrapper {
+	display: block;
+	position: absolute;
+	top: 90px;
+	bottom: 0;
+	left: 640px;
+	right: 0;
+	padding: 4px;
+	border: 1px solid #aaa;
+}
