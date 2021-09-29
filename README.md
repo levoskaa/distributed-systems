@@ -8,7 +8,7 @@
 
 ### 4. labor: WebApi :heavy_check_mark:
 
-### 5. labor: Xtext
+### 5. labor: Xtext :heavy_check_mark: (csak a vezetett rész)
 
 ### 6. labor: MPS
 
