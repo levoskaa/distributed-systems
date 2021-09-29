@@ -1,0 +1,86 @@
+grammar hu.bme.aut.statechartdsl.StatechartDSL
+with org.eclipse.xtext.common.Terminals
+
+generate statechartDSL "http://www.bme.hu/aut/statechartdsl/StatechartDSL"
+
+StatechartModel:
+	states+=State*;
+
+State:
+	'state' name=ID '{'
+	('entryActions:' entryActions+=ArithmeticExpression+ )?
+	('exitActions:' exitActions+=ArithmeticExpression+ )?
+	('transitions' '{' transitions+=Transition+ '}')?
+	'}';
+
+Transition:
+	'transition' '{'
+		'event:' event=ID
+		'target:' targetState=[State]
+		('guard:' guardCondition=LogicalExpression)?
+		('actions:'actions+=ArithmeticExpression
+			(',' actions+=ArithmeticExpression)* )?
+	'}';
+	
+ArithmeticExpression:
+	UnaryArithmeticExpression | BinaryArithmeticExpression
+;
+
+BinaryArithmeticExpression:
+	PlusEqualsExpression | MinusEqualsExpression
+;
+
+MinusEqualsExpression:
+	'MEQ' '(' lhs=ID ',' rhs=INT ')'
+;
+
+PlusEqualsExpression:
+	'PEQ' '(' lhs=ID ',' rhs=INT ')'
+;
+
+UnaryArithmeticExpression:
+	PreIncrementExpression | PreDecrementExpression
+;
+
+PreDecrementExpression:
+	'PREDEC' '(' operand=ID ')'
+;
+
+PreIncrementExpression:
+	'PREINC' '(' operand=ID ')'
+;
+
+LogicalExpression:
+	UnaryLogicalExpression | BinaryLogicalExpression
+;
+
+BinaryLogicalExpression:
+	EqualsExpression | GreaterThanExpression | LesserThanExpression | AndExpression | OrExpression
+;
+
+AndExpression:
+	'AND' '(' lhs=LogicalExpression ',' rhs=LogicalExpression ')'
+;
+
+OrExpression:
+	'OR' '(' lhs=LogicalExpression ',' rhs=LogicalExpression ')'
+;
+
+EqualsExpression:
+	'EQ' '(' lhs=ID ',' rhs=INT ')'
+;
+
+GreaterThanExpression:
+	'GT' '(' lhs=ID ',' rhs=INT ')'
+;
+LesserThanExpression:
+	'LT' '(' lhs=ID ',' rhs=INT ')'
+;
+
+UnaryLogicalExpression:
+	NotExpression
+;
+
+NotExpression:
+	'NOT' '(' operand=LogicalExpression ')'
+;

@@ -1,0 +1,104 @@
+abstract class AbstractState {
+	Statechart statechart;
+	
+	public AbstractState(Statechart stateChart) {
+		this.statechart = statechart;
+	}
+	
+	public abstract void executeEntryActions();
+	private abstract void executeExitActions();
+}
+
+class PowerOff extends AbstractState {
+	
+	public PowerOff(Statechart statechart) {
+		super(statechart);
+	}
+	
+	@Override
+	public void executeEntryActions() {
+	}
+	
+	@Override
+	private void executeExitActions() {
+		++powerOnCounter;
+	}
+	
+	void powerPressed() {
+		consumption += 5;
+		--power;
+		executeExitActions();
+		statechart.setState(statechart.powerOnState);
+	}
+	
+}
+class PowerSaving extends AbstractState {
+	
+	public PowerSaving(Statechart statechart) {
+		super(statechart);
+	}
+	
+	@Override
+	public void executeEntryActions() {
+		consumption -= 75;
+	}
+	
+	@Override
+	private void executeExitActions() {
+		consumption += 75;
+	}
+	
+	void savePowerPressed() {
+		executeExitActions();
+		statechart.setState(statechart.powerOnState);
+	}
+	
+	void powerPressed() {
+		executeExitActions();
+		statechart.setState(statechart.powerOffState);
+	}
+	
+}
+class PowerOn extends AbstractState {
+	
+	public PowerOn(Statechart statechart) {
+		super(statechart);
+	}
+	
+	@Override
+	public void executeEntryActions() {
+	}
+	
+	@Override
+	private void executeExitActions() {
+	}
+	
+	void powerPressed() {
+		executeExitActions();
+		statechart.setState(statechart.powerOffState);
+	}
+	
+	void savePowerPressed() {
+		executeExitActions();
+		statechart.setState(statechart.powerSavingState);
+	}
+	
+}
+
+public class Statechart {
+	AbstractState currentState;
+	public PowerOff powerOffState;
+	public PowerSaving powerSavingState;
+	public PowerOn powerOnState;
+	
+	StateChart() {
+		powerOffState = new PowerOff(this);
+		powerSavingState = new PowerSaving(this);
+		powerOnState = new PowerOn(this);
+	}
+	
+	void setState(AbstractState state) {
+		currentState = state;
+		state.executeEntryActions();
+	}
+}

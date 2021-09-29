@@ -1,0 +1,41 @@
+state PowerOff {
+	exitActions: PREINC(powerOnCounter)
+	transitions {
+		transition {
+			event: powerPressed
+			target: PowerOn
+			guard: OR(GT(power, 10), LT(consumption, 0))
+			actions: PEQ(consumption, 5), PREDEC(power)
+		}
+	}
+}
+
+state PowerSaving {
+	entryActions: MEQ(consumption, 75)
+	exitActions: PEQ(consumption, 75)
+	transitions {
+		transition {
+			event: savePowerPressed
+			target: PowerOn
+		}
+		
+		transition {
+			event: powerPressed
+			target: PowerOff
+		}
+	}
+}
+
+state PowerOn {
+	transitions {
+		transition {
+			event: powerPressed
+			target: PowerOff
+		}
+		
+		transition {
+			event: savePowerPressed
+			target: PowerSaving
+		}
+	}
+}
