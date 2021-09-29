@@ -26,18 +26,6 @@ namespace WebAPI.Controllers
             return Ok(_service.GetQuestionFormAnswers().Select(qfa => new QuestionFormAnswerDTO(qfa)));
         }
 
-        // Find one question form answer by id
-        [HttpGet("{id}")]
-        public ActionResult<QuestionFormAnswerDTO> GetQuestionFormAnswer(long id)
-        {
-            var result = _service.GetQuestionFormAnswer(id);
-            if (result == null)
-            {
-                return NotFound();
-            }
-            return Ok(new QuestionFormAnswerDTO(result));
-        }
-
         // Create a new question form answer
         [HttpPost]
         public ActionResult<QuestionFormAnswerDTO> CreateNewQuestionFormAnswer(QuestionFormAnswerDTO questionFormAnswerDTO)
@@ -53,9 +41,7 @@ namespace WebAPI.Controllers
                 QuestionFormAnswer createdEntity = _service.SaveQuestionFormAnswer(questionFormAnswerDTO.ToEntity());
                 // According to the conventions, we have to return a HTTP 201 created repsonse, with
                 // field "Location" in the header pointing to the created object
-                return CreatedAtAction(
-                    nameof(GetQuestionFormAnswer),
-                    new { id = createdEntity.Id },
+                return CreatedAtAction(string.Empty,
                     new QuestionFormAnswerDTO(createdEntity)
                     );
             }
@@ -66,6 +52,14 @@ namespace WebAPI.Controllers
             catch (AnsweredQuestionNotInQuestionFormException)
             {
                 return BadRequest("Answer given for a Question that is not part of the QuestionForm!");
+            }
+            catch (AnswerTooLongException)
+            {
+                return BadRequest("Answer too long!");
+            }
+            catch (IncorrectAnswerFormatException e)
+            {
+                return BadRequest(e.Message);
             }
         }
     }

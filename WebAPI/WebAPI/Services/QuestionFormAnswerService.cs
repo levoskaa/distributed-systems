@@ -30,6 +30,32 @@ namespace WebAPI.Services
             {
                 throw new AnsweredQuestionNotInQuestionFormException();
             }
+            foreach (var answer in questionFormAnswer.Answers)
+            {
+                var question = questionForm.Questions.SingleOrDefault(q => q.Id == answer.QuestionId);
+                if (question is FreeTextQuestion freeTextQuestion)
+                {
+                    if (answer.AnswerText.Length > freeTextQuestion.MaxAnswerLength)
+                    {
+                        throw new AnswerTooLongException();
+                    }
+                }
+                else if (question is MultipleChoiceQuestion multipleChoiceQuestion)
+                {
+                    if (!multipleChoiceQuestion.PossibleAnswers.Contains(answer.AnswerText))
+                    {
+                        throw new IncorrectAnswerFormatException("Defined answers do not contain the given answer!");
+                    }
+                }
+                else if (question is TrueOrFalseQuestion trueOrFalseQuestion)
+                {
+                    if (answer.AnswerText != "true" && answer.AnswerText != "false")
+                    {
+                        throw new IncorrectAnswerFormatException("True or false answer expected!");
+                    }
+
+                }
+            }
             // Register the new question form answer as an entity tracekd by EF
             var result = _context.QuestionFormAnswers.Add(questionFormAnswer);
             // Save to database
