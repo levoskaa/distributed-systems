@@ -1,33 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
+using System.Collections.Concurrent;
 using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
 
 namespace WCF2
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class ChatService : IChatService
     {
-        public string GetData(int value)
+        ConcurrentDictionary<string, IChatCallback> clients = new ConcurrentDictionary<string, IChatCallback>();
+
+        public void Register(string name)
         {
-            return string.Format("You entered: {0}", value);
+            clients.TryAdd(name, OperationContext.Current.GetCallbackChannel<IChatCallback>());
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public void Send(ChatMessage m)
         {
-            if (composite == null)
-            {
-                throw new ArgumentNullException("composite");
-            }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
+            clients.TryGetValue(m.Target, out var client);
+            client.Receive(m);
         }
     }
 }
