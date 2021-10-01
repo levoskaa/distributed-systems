@@ -20,6 +20,12 @@ namespace Client.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EchoService/Echo", ReplyAction="http://tempuri.org/EchoService/EchoResponse")]
         System.Threading.Tasks.Task<string> EchoAsync(string text);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EchoService/LongEcho", ReplyAction="http://tempuri.org/EchoService/LongEchoResponse")]
+        string LongEcho(string text);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EchoService/LongEcho", ReplyAction="http://tempuri.org/EchoService/LongEchoResponse")]
+        System.Threading.Tasks.Task<string> LongEchoAsync(string text);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -55,6 +61,14 @@ namespace Client.ServiceReference1 {
         
         public System.Threading.Tasks.Task<string> EchoAsync(string text) {
             return base.Channel.EchoAsync(text);
+        }
+        
+        public string LongEcho(string text) {
+            return base.Channel.LongEcho(text);
+        }
+        
+        public System.Threading.Tasks.Task<string> LongEchoAsync(string text) {
+            return base.Channel.LongEchoAsync(text);
         }
     }
 }

@@ -12,16 +12,35 @@
   <wsdl:message name="EchoService_Echo_OutputMessage">
     <wsdl:part name="parameters" element="tns:EchoResponse" />
   </wsdl:message>
+  <wsdl:message name="EchoService_LongEcho_InputMessage">
+    <wsdl:part name="parameters" element="tns:LongEcho" />
+  </wsdl:message>
+  <wsdl:message name="EchoService_LongEcho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LongEchoResponse" />
+  </wsdl:message>
   <wsdl:portType name="EchoService">
     <wsdl:operation name="Echo">
       <wsdl:input wsaw:Action="http://tempuri.org/EchoService/Echo" message="tns:EchoService_Echo_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/EchoService/EchoResponse" message="tns:EchoService_Echo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LongEcho">
+      <wsdl:input wsaw:Action="http://tempuri.org/EchoService/LongEcho" message="tns:EchoService_LongEcho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/EchoService/LongEchoResponse" message="tns:EchoService_LongEcho_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_EchoService" type="tns:EchoService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="Echo">
       <soap:operation soapAction="http://tempuri.org/EchoService/Echo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LongEcho">
+      <soap:operation soapAction="http://tempuri.org/EchoService/LongEcho" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
