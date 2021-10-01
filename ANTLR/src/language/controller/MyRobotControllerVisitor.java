@@ -1,6 +1,8 @@
 package language.controller;
 
+import game.Direction;
 import game.GameController;
+import org.antlr.v4.runtime.tree.TerminalNode;
 
 public class MyRobotControllerVisitor extends RobotControllerBaseVisitor<Object> {
     private GameController controller;
@@ -25,7 +27,19 @@ public class MyRobotControllerVisitor extends RobotControllerBaseVisitor<Object>
 
     @Override
     public Object visitRotateStatement(RobotControllerParser.RotateStatementContext ctx) {
-        controller.rotate();
+        String direction;
+        try {
+            direction = ctx.DIRECTION().getText();
+        } catch (Exception e) {
+            direction = "right";
+        }
+        if (direction.equals("left")) {
+            for (int i = 0; i < 3; i++) {
+                controller.rotate();
+            }
+        } else {
+            controller.rotate();
+        }
         return super.visitRotateStatement(ctx);
     }
 
