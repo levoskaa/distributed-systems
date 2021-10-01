@@ -14,7 +14,7 @@
 
 ### 7. labor: ANTLR :heavy_check_mark: (csak a vezetett rész)
 
-### 8. labor: WCF
+### 8. labor: WCF :heavy_check_mark:
 
 ### 9. labor: Blockly
 
