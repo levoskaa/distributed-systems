@@ -1,11 +1,8 @@
-move;
-rotate; rotate; rotate;
-move; move; move; move;
-rotate; rotate; rotate;
-move;
-rotate; rotate; rotate;
-move; move;
-rotate; rotate; rotate;
-move; move; move; move;
-rotate; rotate; rotate;
-move;
+loop (4) {
+	move;
+	rotate;
+	move;
+	rotate;
+	move;
+	log("loop done");
+}

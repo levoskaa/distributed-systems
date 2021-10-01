@@ -34,4 +34,28 @@ public interface RobotControllerVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitRotateStatement(RobotControllerParser.RotateStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RobotControllerParser#loopStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLoopStatement(RobotControllerParser.LoopStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RobotControllerParser#amount}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAmount(RobotControllerParser.AmountContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RobotControllerParser#logStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogStatement(RobotControllerParser.LogStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link RobotControllerParser#logMessage}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitLogMessage(RobotControllerParser.LogMessageContext ctx);
 }

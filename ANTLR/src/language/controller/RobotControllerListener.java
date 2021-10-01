@@ -47,4 +47,44 @@ public interface RobotControllerListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitRotateStatement(RobotControllerParser.RotateStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RobotControllerParser#loopStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterLoopStatement(RobotControllerParser.LoopStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RobotControllerParser#loopStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitLoopStatement(RobotControllerParser.LoopStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RobotControllerParser#amount}.
+	 * @param ctx the parse tree
+	 */
+	void enterAmount(RobotControllerParser.AmountContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RobotControllerParser#amount}.
+	 * @param ctx the parse tree
+	 */
+	void exitAmount(RobotControllerParser.AmountContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RobotControllerParser#logStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogStatement(RobotControllerParser.LogStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RobotControllerParser#logStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogStatement(RobotControllerParser.LogStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link RobotControllerParser#logMessage}.
+	 * @param ctx the parse tree
+	 */
+	void enterLogMessage(RobotControllerParser.LogMessageContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link RobotControllerParser#logMessage}.
+	 * @param ctx the parse tree
+	 */
+	void exitLogMessage(RobotControllerParser.LogMessageContext ctx);
 }

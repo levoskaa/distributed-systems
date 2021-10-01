@@ -20,4 +20,21 @@ public class MyRobotControllerVisitor extends RobotControllerBaseVisitor<Object>
         controller.rotate();
         return super.visitRotateStatement(ctx);
     }
+
+    @Override
+    public Object visitLoopStatement(RobotControllerParser.LoopStatementContext ctx) {
+        Object result = null;
+        for (int i = 0; i < Integer.parseInt(ctx.amount().INT().getText()); i++) {
+            for (RobotControllerParser.StatementContext stm : ctx.statement()) {
+                result = visit(stm);
+            }
+        }
+        return result;
+    }
+
+    @Override
+    public Object visitLogStatement(RobotControllerParser.LogStatementContext ctx) {
+        controller.displayMessage(ctx.logMessage().STRING().getText());
+        return super.visitLogStatement(ctx);
+    }
 }
