@@ -7,22 +7,35 @@ namespace ChatClientGUI
 {
     public partial class Form1 : Form, IChatServiceCallback
     {
+        private readonly ChatServiceClient proxy;
+
         public Form1()
         {
             InitializeComponent();
+            proxy = new ChatServiceClient(new InstanceContext(this));
         }
 
         public void Receive(ChatMessage m)
         {
-            MessageBox.Show(m.Text);
+            historyTextBox.AppendLine($"{DateTime.Now:HH:mm:ss} | {m.Sender}: {m.Text}");
         }
 
-        private void button1_Click(object sender, System.EventArgs e)
+        private void registerButton_Click(object sender, EventArgs e)
         {
-            var proxy = new ChatServiceClient(new InstanceContext(this));
-            var name = Guid.NewGuid().ToString();
+            var name = fromTextBox.Text;
             proxy.Register(name);
-            proxy.SendAsync(new ChatMessage { Target = name, Text = "Hello, Leo" });
+        }
+
+        private async void sendButton_ClickAsync(object sender, EventArgs e)
+        {
+            var message = new ChatMessage
+            {
+                Sender = fromTextBox.Text,
+                Target = targetTextBox.Text,
+                Text = textTextBox.Text
+            };
+            await proxy.SendAsync(message);
+            textTextBox.Clear();
         }
     }
 }
