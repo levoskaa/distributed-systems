@@ -2,7 +2,7 @@ grammar RobotController;
 
 program: statement+;
 statement: moveStatement | rotateStatement | loopStatement | logStatement;
-moveStatement: MOVE EOS;
+moveStatement: MOVE (LPAREN amount RPAREN)? EOS;
 rotateStatement: ROTATE EOS;
 loopStatement: LOOP (LPAREN amount RPAREN) LCURLY statement+ RCURLY;
 amount: INT;

@@ -11,7 +11,15 @@ public class MyRobotControllerVisitor extends RobotControllerBaseVisitor<Object>
 
     @Override
     public Object visitMoveStatement(RobotControllerParser.MoveStatementContext ctx) {
-        controller.move();
+        int moveAmount;
+        try {
+            moveAmount  = Integer.parseInt(ctx.amount().INT().getText());
+        } catch(Exception e) {
+            moveAmount = 1;
+        }
+        for (int i = 0; i < moveAmount; i++) {
+            controller.move();
+        }
         return super.visitMoveStatement(ctx);
     }
 

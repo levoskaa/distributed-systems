@@ -239,6 +239,11 @@ public class RobotControllerParser extends Parser {
 	public static class MoveStatementContext extends ParserRuleContext {
 		public TerminalNode MOVE() { return getToken(RobotControllerParser.MOVE, 0); }
 		public TerminalNode EOS() { return getToken(RobotControllerParser.EOS, 0); }
+		public TerminalNode LPAREN() { return getToken(RobotControllerParser.LPAREN, 0); }
+		public AmountContext amount() {
+			return getRuleContext(AmountContext.class,0);
+		}
+		public TerminalNode RPAREN() { return getToken(RobotControllerParser.RPAREN, 0); }
 		public MoveStatementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -261,12 +266,27 @@ public class RobotControllerParser extends Parser {
 	public final MoveStatementContext moveStatement() throws RecognitionException {
 		MoveStatementContext _localctx = new MoveStatementContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_moveStatement);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(27);
 			match(MOVE);
-			setState(28);
+			setState(32);
+			_errHandler.sync(this);
+			_la = _input.LA(1);
+			if (_la==LPAREN) {
+				{
+				setState(28);
+				match(LPAREN);
+				setState(29);
+				amount();
+				setState(30);
+				match(RPAREN);
+				}
+			}
+
+			setState(34);
 			match(EOS);
 			}
 		}
@@ -309,9 +329,9 @@ public class RobotControllerParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(30);
+			setState(36);
 			match(ROTATE);
-			setState(31);
+			setState(37);
 			match(EOS);
 			}
 		}
@@ -367,33 +387,33 @@ public class RobotControllerParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(33);
+			setState(39);
 			match(LOOP);
 			{
-			setState(34);
+			setState(40);
 			match(LPAREN);
-			setState(35);
+			setState(41);
 			amount();
-			setState(36);
+			setState(42);
 			match(RPAREN);
 			}
-			setState(38);
+			setState(44);
 			match(LCURLY);
-			setState(40); 
+			setState(46); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(39);
+				setState(45);
 				statement();
 				}
 				}
-				setState(42); 
+				setState(48); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << MOVE) | (1L << ROTATE) | (1L << LOOP) | (1L << LOG))) != 0) );
-			setState(44);
+			setState(50);
 			match(RCURLY);
 			}
 		}
@@ -435,7 +455,7 @@ public class RobotControllerParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(46);
+			setState(52);
 			match(INT);
 			}
 		}
@@ -484,23 +504,23 @@ public class RobotControllerParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(48);
+			setState(54);
 			match(LOG);
-			setState(53);
+			setState(59);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			if (_la==LPAREN) {
 				{
-				setState(49);
+				setState(55);
 				match(LPAREN);
-				setState(50);
+				setState(56);
 				logMessage();
-				setState(51);
+				setState(57);
 				match(RPAREN);
 				}
 			}
 
-			setState(55);
+			setState(61);
 			match(EOS);
 			}
 		}
@@ -542,7 +562,7 @@ public class RobotControllerParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(57);
+			setState(63);
 			match(STRING);
 			}
 		}
@@ -558,22 +578,23 @@ public class RobotControllerParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20>\4\2\t\2\4\3\t"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20D\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\6\2\24\n\2\r\2"+
-		"\16\2\25\3\3\3\3\3\3\3\3\5\3\34\n\3\3\4\3\4\3\4\3\5\3\5\3\5\3\6\3\6\3"+
-		"\6\3\6\3\6\3\6\3\6\6\6+\n\6\r\6\16\6,\3\6\3\6\3\7\3\7\3\b\3\b\3\b\3\b"+
-		"\3\b\5\b8\n\b\3\b\3\b\3\t\3\t\3\t\2\2\n\2\4\6\b\n\f\16\20\2\2\2;\2\23"+
-		"\3\2\2\2\4\33\3\2\2\2\6\35\3\2\2\2\b \3\2\2\2\n#\3\2\2\2\f\60\3\2\2\2"+
-		"\16\62\3\2\2\2\20;\3\2\2\2\22\24\5\4\3\2\23\22\3\2\2\2\24\25\3\2\2\2\25"+
-		"\23\3\2\2\2\25\26\3\2\2\2\26\3\3\2\2\2\27\34\5\6\4\2\30\34\5\b\5\2\31"+
-		"\34\5\n\6\2\32\34\5\16\b\2\33\27\3\2\2\2\33\30\3\2\2\2\33\31\3\2\2\2\33"+
-		"\32\3\2\2\2\34\5\3\2\2\2\35\36\7\3\2\2\36\37\7\5\2\2\37\7\3\2\2\2 !\7"+
-		"\4\2\2!\"\7\5\2\2\"\t\3\2\2\2#$\7\6\2\2$%\7\b\2\2%&\5\f\7\2&\'\7\t\2\2"+
-		"\'(\3\2\2\2(*\7\n\2\2)+\5\4\3\2*)\3\2\2\2+,\3\2\2\2,*\3\2\2\2,-\3\2\2"+
-		"\2-.\3\2\2\2./\7\13\2\2/\13\3\2\2\2\60\61\7\f\2\2\61\r\3\2\2\2\62\67\7"+
-		"\7\2\2\63\64\7\b\2\2\64\65\5\20\t\2\65\66\7\t\2\2\668\3\2\2\2\67\63\3"+
-		"\2\2\2\678\3\2\2\289\3\2\2\29:\7\5\2\2:\17\3\2\2\2;<\7\r\2\2<\21\3\2\2"+
-		"\2\6\25\33,\67";
+		"\16\2\25\3\3\3\3\3\3\3\3\5\3\34\n\3\3\4\3\4\3\4\3\4\3\4\5\4#\n\4\3\4\3"+
+		"\4\3\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\3\6\6\6\61\n\6\r\6\16\6\62\3\6"+
+		"\3\6\3\7\3\7\3\b\3\b\3\b\3\b\3\b\5\b>\n\b\3\b\3\b\3\t\3\t\3\t\2\2\n\2"+
+		"\4\6\b\n\f\16\20\2\2\2B\2\23\3\2\2\2\4\33\3\2\2\2\6\35\3\2\2\2\b&\3\2"+
+		"\2\2\n)\3\2\2\2\f\66\3\2\2\2\168\3\2\2\2\20A\3\2\2\2\22\24\5\4\3\2\23"+
+		"\22\3\2\2\2\24\25\3\2\2\2\25\23\3\2\2\2\25\26\3\2\2\2\26\3\3\2\2\2\27"+
+		"\34\5\6\4\2\30\34\5\b\5\2\31\34\5\n\6\2\32\34\5\16\b\2\33\27\3\2\2\2\33"+
+		"\30\3\2\2\2\33\31\3\2\2\2\33\32\3\2\2\2\34\5\3\2\2\2\35\"\7\3\2\2\36\37"+
+		"\7\b\2\2\37 \5\f\7\2 !\7\t\2\2!#\3\2\2\2\"\36\3\2\2\2\"#\3\2\2\2#$\3\2"+
+		"\2\2$%\7\5\2\2%\7\3\2\2\2&\'\7\4\2\2\'(\7\5\2\2(\t\3\2\2\2)*\7\6\2\2*"+
+		"+\7\b\2\2+,\5\f\7\2,-\7\t\2\2-.\3\2\2\2.\60\7\n\2\2/\61\5\4\3\2\60/\3"+
+		"\2\2\2\61\62\3\2\2\2\62\60\3\2\2\2\62\63\3\2\2\2\63\64\3\2\2\2\64\65\7"+
+		"\13\2\2\65\13\3\2\2\2\66\67\7\f\2\2\67\r\3\2\2\28=\7\7\2\29:\7\b\2\2:"+
+		";\5\20\t\2;<\7\t\2\2<>\3\2\2\2=9\3\2\2\2=>\3\2\2\2>?\3\2\2\2?@\7\5\2\2"+
+		"@\17\3\2\2\2AB\7\r\2\2B\21\3\2\2\2\7\25\33\"\62=";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
