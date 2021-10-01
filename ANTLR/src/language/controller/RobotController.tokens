@@ -1,0 +1,9 @@
+MOVE=1
+ROTATE=2
+EOS=3
+WS=4
+COMMENT=5
+LINE_COMMENT=6
+'move'=1
+'rotate'=2
+';'=3
