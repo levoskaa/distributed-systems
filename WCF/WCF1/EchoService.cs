@@ -8,7 +8,7 @@ namespace WCF1
         [OperationContract]
         string Echo(string text)
         {
-            return text;
+            return "W9HL9H";
         }
     }
 }
