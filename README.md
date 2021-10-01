@@ -12,7 +12,7 @@
 
 ### 6. labor: MPS
 
-### 7. labor: ANTLR
+### 7. labor: ANTLR :heavy_check_mark: (csak a vezetett rész)
 
 ### 8. labor: WCF
 
