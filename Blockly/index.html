@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Elosztott labor Blockly Demo</title>
@@ -15,53 +16,60 @@
       background-color: #fff;
       font-family: sans-serif;
     }
+
     h1 {
       font-weight: normal;
       font-size: 140%;
     }
+
     a-scene {
-    height: 700px;
-    width: auto;
+      height: 700px;
+      width: auto;
     }
   </style>
 </head>
+
 <body>
   <p>
     <button onclick="showCode()">Show Code</button>
     <button onclick="runCode()">Run</button>
   </p>
   <table style="table-layout: auto; width: 100%">
-      <tr>
-          <td id="blocklyArea" width=50%>
-              <div id="blocklyDiv" style="height: 700px; width:auto;"></div>
-          </td>
-          <td id ="GUI" width=50%>
-            <div style="height: 700px; width:auto;">
-                <a-scene embedded>
-                    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-                    <a-sky color="#ECECEC"></a-sky>
-              </a-scene>
-            </div>
-          </td>
-      </tr>
+    <tr>
+      <td id="blocklyArea" width=50%>
+        <div id="blocklyDiv" style="height: 700px; width:auto;"></div>
+      </td>
+      <td id="GUI" width=50%>
+        <div style="height: 700px; width:auto;">
+          <a-scene embedded>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+            <a-sky color="#ECECEC"></a-sky>
+          </a-scene>
+        </div>
+      </td>
+    </tr>
   </table>
 
   <xml id="toolbox" style="display: none">
+    <category name="Basic blocks" colour="180">
+      <block type="print"></block>
+      <block type="text_input"></block>
+    </category>
   </xml>
- 
+
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
-        {toolbox: document.getElementById('toolbox')});
+      { toolbox: document.getElementById('toolbox') });
 
     function updateRealTimeCodeGeneration(event) {
-        var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
+      var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
     }
 
     demoWorkspace.addChangeListener(updateRealTimeCodeGeneration);
 
     function showCode() {
       var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
-	  console.log(code);
+      console.log(code);
       alert(code);
     }
 
@@ -79,4 +87,5 @@
     }
   </script>
 </body>
+
 </html>
