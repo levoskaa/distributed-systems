@@ -16,6 +16,6 @@
 
 ### 8. labor: WCF :heavy_check_mark:
 
-### 9. labor: Blockly
+### 9. labor: Blockly :heavy_check_mark:
 
 ### 10. labor: Java EE
