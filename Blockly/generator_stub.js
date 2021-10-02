@@ -59,3 +59,21 @@ Blockly.JavaScript['number_block'] = function (block) {
     var code = number_num;
     return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
+
+Blockly.JavaScript['cylinder_block'] = function (block) {
+    var colour_colour = block.getFieldValue('colour');
+    var value_height = Blockly.JavaScript.valueToCode(block, 'height', Blockly.JavaScript.ORDER_ATOMIC);
+    var value_radius = Blockly.JavaScript.valueToCode(block, 'radius', Blockly.JavaScript.ORDER_ATOMIC);
+    var value_x = Blockly.JavaScript.valueToCode(block, 'x', Blockly.JavaScript.ORDER_ATOMIC);
+    var value_y = Blockly.JavaScript.valueToCode(block, 'y', Blockly.JavaScript.ORDER_ATOMIC);
+    var value_z = Blockly.JavaScript.valueToCode(block, 'z', Blockly.JavaScript.ORDER_ATOMIC);
+
+    var sceneEl = document.querySelector('a-scene');
+    var entityEl = document.createElement('a-entity');
+    entityEl.setAttribute('position', { x: 1, y: 2, z: -3 });
+    // Do `.setAttribute()`s to initialize the entity.
+    sceneEl.appendChild(entityEl);
+
+    var code = '...;\n';
+    return code;
+};

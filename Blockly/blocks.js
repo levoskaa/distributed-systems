@@ -75,3 +75,31 @@ Blockly.Blocks['number_block'] = {
         this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['cylinder_block'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField("CYLINDER")
+            .appendField(new Blockly.FieldColour("#ff0000"), "colour");
+        this.appendValueInput("height")
+            .setCheck("Number")
+            .appendField("height");
+        this.appendValueInput("radius")
+            .setCheck("Number")
+            .appendField("radius");
+        this.appendValueInput("x")
+            .setCheck("Number")
+            .appendField("x");
+        this.appendValueInput("y")
+            .setCheck("Number")
+            .appendField("y");
+        this.appendValueInput("z")
+            .setCheck("Number")
+            .appendField("z");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(230);
+        this.setTooltip("This block represents a cylinder.");
+        this.setHelpUrl("");
+    }
+};
