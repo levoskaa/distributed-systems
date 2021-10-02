@@ -42,3 +42,25 @@ Blockly.Blocks['repeat_block'] = {
         this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['for_loop_block'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField("count with")
+            .appendField(new Blockly.FieldVariable("i"), "loop_var")
+            .appendField("from")
+            .appendField(new Blockly.FieldNumber(0), "from_input")
+            .appendField("to")
+            .appendField(new Blockly.FieldNumber(0), "to_input")
+            .appendField("by")
+            .appendField(new Blockly.FieldNumber(0, 0), "by_input");
+        this.appendStatementInput("loop_blocks")
+            .setCheck(null)
+            .appendField("do");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(180);
+        this.setTooltip("This block represents a traditional for loop.");
+        this.setHelpUrl("");
+    }
+};

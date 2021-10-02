@@ -20,3 +20,36 @@ Blockly.JavaScript['repeat_block'] = function (block) {
         '}\n';
     return code;
 };
+
+Blockly.JavaScript['for_loop_block'] = function (block) {
+    var variable_loop_var = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('loop_var'), Blockly.Variables.NAME_TYPE);
+    var number_from_input = block.getFieldValue('from_input');
+    var number_to_input = block.getFieldValue('to_input');
+    var number_by_input = block.getFieldValue('by_input');
+    var statements_loop_blocks = Blockly.JavaScript.statementToCode(block, 'loop_blocks');
+
+    var comparison;
+    var operation = `${variable_loop_var}`;
+    if (number_from_input <= number_to_input) {
+        comparison = '<=';
+        if (number_by_input == 1) {
+            operation += '++';
+        } else {
+            operation += `+=${number_by_input}`;
+        }
+    } else {
+        comparison = '>=';
+        if (number_by_input == 1) {
+            operation += '--';
+        } else {
+            operation += `-=${number_by_input}`;
+        }
+    }
+
+    var code = `for (${variable_loop_var}=${number_from_input};`
+        + `${variable_loop_var}${comparison}${number_to_input};`
+        + `${operation}) {\n`
+        + statements_loop_blocks
+        + '}\n';
+    return code;
+};
