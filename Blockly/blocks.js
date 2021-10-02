@@ -64,3 +64,14 @@ Blockly.Blocks['for_loop_block'] = {
         this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['number_block'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField(new Blockly.FieldNumber(0), "num");
+        this.setOutput(true, "Number");
+        this.setColour(225);
+        this.setTooltip("This block represents a number block.");
+        this.setHelpUrl("");
+    }
+};

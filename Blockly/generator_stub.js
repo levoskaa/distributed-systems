@@ -53,3 +53,9 @@ Blockly.JavaScript['for_loop_block'] = function (block) {
         + '}\n';
     return code;
 };
+
+Blockly.JavaScript['number_block'] = function (block) {
+    var number_num = block.getFieldValue('num');
+    var code = number_num;
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};
