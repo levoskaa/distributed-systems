@@ -81,3 +81,9 @@ Blockly.JavaScript['cylinder_block'] = function (block) {
 
     return code;
 };
+
+Blockly.JavaScript['reverse_sign_block'] = function (block) {
+    var variable_number = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('number'), Blockly.Variables.NAME_TYPE);
+    var code = `-${variable_number}`;
+    return [code, Blockly.JavaScript.ORDER_ATOMIC];
+};

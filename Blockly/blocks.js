@@ -103,3 +103,16 @@ Blockly.Blocks['cylinder_block'] = {
         this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['reverse_sign_block'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField("reverse sign of")
+            .appendField(new Blockly.FieldVariable("variable"), "number");
+        this.setInputsInline(false);
+        this.setOutput(true, "Number");
+        this.setColour(330);
+        this.setTooltip("This block reverses the sign of a number.");
+        this.setHelpUrl("");
+    }
+};
