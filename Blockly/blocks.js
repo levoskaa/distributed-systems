@@ -25,3 +25,20 @@ Blockly.Blocks['text_input'] = {
         this.setHelpUrl("");
     }
 };
+
+Blockly.Blocks['repeat_block'] = {
+    init: function () {
+        this.appendDummyInput()
+            .appendField("repeat")
+            .appendField(new Blockly.FieldNumber(0, 0), "loop_var")
+            .appendField("times");
+        this.appendStatementInput("loop_blocks")
+            .setCheck(null)
+            .appendField("do");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(180);
+        this.setTooltip("This block can repeat the embedded blocks.");
+        this.setHelpUrl("");
+    }
+};

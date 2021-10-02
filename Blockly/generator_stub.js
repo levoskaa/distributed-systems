@@ -9,3 +9,14 @@ Blockly.JavaScript['text_input'] = function (block) {
     var code = `"${text_parameter}"`;
     return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
+
+Blockly.JavaScript['repeat_block'] = function (block) {
+    var loop_var = block.getFieldValue('loop_var');
+    var statements_loop_blocks = Blockly.JavaScript.statementToCode(block, 'loop_blocks');
+    var code = 'var repeats = 0;\n' +
+        `while (repeats < ${loop_var}) {\n` +
+        statements_loop_blocks +
+        'repeats++;\n' +
+        '}\n';
+    return code;
+};
