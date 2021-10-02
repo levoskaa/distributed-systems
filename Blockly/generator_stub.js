@@ -68,12 +68,16 @@ Blockly.JavaScript['cylinder_block'] = function (block) {
     var value_y = Blockly.JavaScript.valueToCode(block, 'y', Blockly.JavaScript.ORDER_ATOMIC);
     var value_z = Blockly.JavaScript.valueToCode(block, 'z', Blockly.JavaScript.ORDER_ATOMIC);
 
-    var sceneEl = document.querySelector('a-scene');
-    var entityEl = document.createElement('a-entity');
-    entityEl.setAttribute('position', { x: 1, y: 2, z: -3 });
-    // Do `.setAttribute()`s to initialize the entity.
-    sceneEl.appendChild(entityEl);
+    var code = `var sceneEl = document.querySelector('a-scene');\n`
+        + `var entityEl = document.createElement('a-entity');\n`
+        + `entityEl.setAttribute('geometry', {`
+        + `primitive: 'cylinder',`
+        + `height: ${value_height},`
+        + `radius: ${value_radius}`
+        + '});\n'
+        + `entityEl.setAttribute('position', { x: ${value_x}, y: ${value_y}, z: ${value_z} });\n`
+        + `entityEl.setAttribute('material', { color: '${colour_colour}' });\n`
+        + 'sceneEl.appendChild(entityEl);\n';
 
-    var code = '...;\n';
     return code;
 };
