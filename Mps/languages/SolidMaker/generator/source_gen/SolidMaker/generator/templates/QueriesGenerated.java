@@ -4,10 +4,136 @@ package SolidMaker.generator.templates;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
+import jetbrains.mps.generator.template.PropertyMacroContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Map;
+import jetbrains.mps.generator.impl.query.SourceNodesQuery;
+import java.util.HashMap;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.generator.impl.query.QueryKey;
+import jetbrains.mps.generator.impl.query.QueryKeyImpl;
+import java.util.Collection;
+import jetbrains.mps.generator.impl.GenerationFailureException;
+import jetbrains.mps.util.IterableUtil;
+import jetbrains.mps.generator.impl.query.PropertyValueQuery;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
+  }
+  public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_1_1(final PropertyMacroContext _context) {
+    return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
+  }
+  public static Object propertyMacro_GetValue_2_0(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.x$1MAQ);
+  }
+  public static Object propertyMacro_GetValue_2_1(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.y$1N4S);
+  }
+  public static Object propertyMacro_GetValue_2_2(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.z$1NLV);
+  }
+  public static Object propertyMacro_GetValue_2_3(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), PROPS.radius$4nLQ);
+  }
+  public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), LINKS.shapes$OyRA);
+  }
+  private final Map<String, SourceNodesQuery> snsqMethods = new HashMap<String, SourceNodesQuery>();
+  {
+    int i = 0;
+    snsqMethods.put("8609473906896858983", new SNsQ(i++));
+  }
+  @NotNull
+  @Override
+  public SourceNodesQuery getSourceNodesQuery(@NotNull QueryKey identity) {
+    final String id = ((QueryKeyImpl) identity).getQueryNodeId().toString();
+    if (!(snsqMethods.containsKey(id))) {
+      return super.getSourceNodesQuery(identity);
+    }
+    return snsqMethods.get(id);
+  }
+  private static class SNsQ implements SourceNodesQuery {
+    private final int methodKey;
+    public SNsQ(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @NotNull
+    public Collection<SNode> evaluate(@NotNull SourceSubstituteMacroNodesContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_1_0(ctx));
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+  private final Map<String, PropertyValueQuery> pvqMethods = new HashMap<String, PropertyValueQuery>();
+  {
+    int i = 0;
+    pvqMethods.put("3187011881833169665", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf93d565d10L, 0xf93d565d11L, "value"), "MyTitle"));
+    pvqMethods.put("3187011881833167596", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "map_Scene"));
+    pvqMethods.put("3187011881833146935", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "100"));
+    pvqMethods.put("3187011881833150553", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "100"));
+    pvqMethods.put("3187011881833150662", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "0"));
+    pvqMethods.put("3187011881833150825", new PVQ(i++, MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc59b314L, 0xf8cc59b315L, "value"), "20"));
+  }
+  @NotNull
+  @Override
+  public PropertyValueQuery getPropertyValueQuery(@NotNull QueryKey identity) {
+    final String id = identity.getTemplateNode().getNodeId().toString();
+    if (!(pvqMethods.containsKey(id))) {
+      return super.getPropertyValueQuery(identity);
+    }
+    return pvqMethods.get(id);
+  }
+  private static class PVQ extends PropertyValueQuery.Base {
+    private final int methodKey;
+    /*package*/ PVQ(int methodKey, SProperty property, String templateValue) {
+      super(property, templateValue);
+      this.methodKey = methodKey;
+    }
+    @Nullable
+    public Object evaluate(@NotNull PropertyMacroContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          return QueriesGenerated.propertyMacro_GetValue_1_0(ctx);
+        case 1:
+          return QueriesGenerated.propertyMacro_GetValue_1_1(ctx);
+        case 2:
+          return QueriesGenerated.propertyMacro_GetValue_2_0(ctx);
+        case 3:
+          return QueriesGenerated.propertyMacro_GetValue_2_1(ctx);
+        case 4:
+          return QueriesGenerated.propertyMacro_GetValue_2_2(ctx);
+        case 5:
+          return QueriesGenerated.propertyMacro_GetValue_2_3(ctx);
+        default:
+          throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
+      }
+    }
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty x$1MAQ = MetaAdapterFactory.getProperty(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc62cL, 0x4354e39751afc62dL, "x");
+    /*package*/ static final SProperty y$1N4S = MetaAdapterFactory.getProperty(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc62cL, 0x4354e39751afc62fL, "y");
+    /*package*/ static final SProperty z$1NLV = MetaAdapterFactory.getProperty(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc62cL, 0x4354e39751afc632L, "z");
+    /*package*/ static final SProperty radius$4nLQ = MetaAdapterFactory.getProperty(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc636L, 0x4354e39751afc637L, "radius");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink shapes$OyRA = MetaAdapterFactory.getContainmentLink(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc639L, 0x2c3a8a6bc79df5c6L, "shapes");
   }
 }

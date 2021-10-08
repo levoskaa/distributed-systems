@@ -57,9 +57,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("SolidMaker", "Scene", 0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc639L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:743558e1-4fb8-4853-93b0-8bd9f0ca762b(SolidMaker.structure)/4851752937634907705");
     b.version(2);
-    b.aggregate("shapes", 0x4354e39751afc63cL).target(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc62cL).optional(true).ordered(true).multiple(true).origin("4851752937634907708").done();
+    b.aggregate("shapes", 0x2c3a8a6bc79df5c6L).target(0xf20fa6ad2c4f467eL, 0xac8800277ef9754aL, 0x4354e39751afc62cL).optional(true).ordered(true).multiple(true).origin("3187011881833199046").done();
     b.alias("scene");
     return b.create();
   }
@@ -80,7 +81,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:743558e1-4fb8-4853-93b0-8bd9f0ca762b(SolidMaker.structure)/4851752937634907702");
     b.version(2);
     b.property("radius", 0x4354e39751afc637L).type(PrimitiveTypeId.INTEGER).origin("4851752937634907703").done();
-    b.alias("spehere");
+    b.alias("sphere");
     return b.create();
   }
 }

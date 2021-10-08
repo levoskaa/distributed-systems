@@ -11,7 +11,7 @@
         <property id="4851752937634907703" name="radius" index="iYMmw" />
       </concept>
       <concept id="4851752937634907705" name="SolidMaker.structure.Scene" flags="ng" index="iYMmI">
-        <child id="4851752937634907708" name="shapes" index="iYMmF" />
+        <child id="3187011881833199046" name="shapes" index="3FDRYH" />
       </concept>
       <concept id="4851752937634907692" name="SolidMaker.structure.Shape" flags="ng" index="iYMmV">
         <property id="4851752937634907698" name="z" index="iYMm_" />
@@ -25,19 +25,25 @@
       </concept>
     </language>
   </registry>
-  <node concept="iYMmI" id="4dkSTthFWOi">
+  <node concept="iYMmI" id="31nr4L6mDLc">
     <property role="TrG5h" value="MyScene" />
-    <node concept="iYMmx" id="4dkSTthFX50" role="iYMmF">
-      <property role="iYMmw" value="6" />
-      <property role="iYMmU" value="0" />
-      <property role="iYMmS" value="0" />
+    <node concept="iYMmx" id="31nr4L6mDLf" role="3FDRYH">
+      <property role="iYMmU" value="50" />
+      <property role="iYMmS" value="50" />
       <property role="iYMm_" value="0" />
+      <property role="iYMmw" value="10" />
     </node>
-    <node concept="iYMmx" id="4dkSTthFX55" role="iYMmF">
-      <property role="iYMmw" value="5" />
-      <property role="iYMmU" value="22" />
-      <property role="iYMmS" value="22" />
-      <property role="iYMm_" value="22" />
+    <node concept="iYMmx" id="31nr4L6mDLl" role="3FDRYH">
+      <property role="iYMmU" value="200" />
+      <property role="iYMmS" value="200" />
+      <property role="iYMm_" value="0" />
+      <property role="iYMmw" value="40" />
+    </node>
+    <node concept="iYMmx" id="31nr4L6mDLt" role="3FDRYH">
+      <property role="iYMmU" value="350" />
+      <property role="iYMmS" value="350" />
+      <property role="iYMm_" value="0" />
+      <property role="iYMmw" value="90" />
     </node>
   </node>
 </model>

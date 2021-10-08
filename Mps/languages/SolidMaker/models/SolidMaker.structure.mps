@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -83,6 +84,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4dkSTthFWoU" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="31nr4L6mWeS" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
     <node concept="1TJgyj" id="2KUyAJ7Bvn6" role="1TKVEi">
       <property role="IQ2ns" value="3187011881833199046" />

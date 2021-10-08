@@ -34,7 +34,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Sphere:
         if (props_Sphere == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("spehere");
+          cpb.rawPresentation("sphere");
           props_Sphere = cpb.create();
         }
         return props_Sphere;

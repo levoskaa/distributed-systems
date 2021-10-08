@@ -395,7 +395,7 @@
       <node id="7626947574428501152" at="184,0,185,0" concept="7" trace="name$MnvL" />
       <node id="7626947574428501152" at="188,0,189,0" concept="7" trace="PropertyAttribute$Gb" />
       <node id="7626947574428501152" at="189,0,190,0" concept="7" trace="Shape$IU" />
-      <node id="7626947574428501152" at="193,0,194,0" concept="7" trace="shapes$4oYo" />
+      <node id="7626947574428501152" at="193,0,194,0" concept="7" trace="shapes$OyRA" />
       <node id="7626947574428501152" at="45,0,47,0" concept="2" trace="myNode" />
       <node id="7626947574428501152" at="116,0,118,0" concept="2" trace="myNode" />
       <node id="7626947574428501152" at="59,0,62,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
