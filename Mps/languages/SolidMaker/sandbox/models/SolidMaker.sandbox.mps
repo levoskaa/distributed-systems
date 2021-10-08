@@ -43,7 +43,7 @@
       <property role="iYMmU" value="350" />
       <property role="iYMmS" value="350" />
       <property role="iYMm_" value="0" />
-      <property role="iYMmw" value="9" />
+      <property role="iYMmw" value="90" />
     </node>
   </node>
 </model>
