@@ -18,4 +18,4 @@
 
 ### 9. labor: Blockly :heavy_check_mark:
 
-### 10. labor: Java EE
+### 10. labor: Java EE :heavy_check_mark:
